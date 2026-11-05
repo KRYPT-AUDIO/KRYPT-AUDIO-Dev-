@@ -144,7 +144,7 @@ class LosslessAvailability @Inject constructor(
             add(
                 RoutingRow(
                     id = "relay",
-                    label = "Stash lossless",
+                    label = "KRYPT AUDIO lossless",
                     detail = if (relays.isNotEmpty()) "configured" else "not configured",
                     state = if (relays.isNotEmpty()) RoutingState.CONFIGURED else RoutingState.NOT_CONFIGURED,
                 ),

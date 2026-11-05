@@ -30,7 +30,7 @@ class LosslessDiagnosticsContributorTest {
 
     private val rows = listOf(
         RoutingRow("qobuz", "Your Qobuz account", "alice@example.com", RoutingState.CONNECTED),
-        RoutingRow("relay", "Stash lossless", "configured", RoutingState.CONFIGURED),
+        RoutingRow("relay", "KRYPT AUDIO lossless", "configured", RoutingState.CONFIGURED),
     )
     private val availability: LosslessAvailability = mockk { every { routingRows } returns flowOf(rows) }
     private val config: LosslessConfigFetcher = mockk {
@@ -76,21 +76,21 @@ class LosslessDiagnosticsContributorTest {
         val s = contributor().section()
         assertThat(s).contains("Your Qobuz account: connected")
         assertThat(s).doesNotContain("alice@example.com")
-        assertThat(s).contains("Stash lossless: configured")
+        assertThat(s).contains("KRYPT AUDIO lossless: configured")
     }
 
     /** Settings' order is the order a song asks them; the bundle must not tell a different story. */
-    @Test fun `routing keeps Settings' order - an own Tidal server ahead of Stash lossless`() = runTest {
+    @Test fun `routing keeps Settings' order - an own Tidal server ahead of KRYPT AUDIO lossless`() = runTest {
         every { availability.routingRows } returns flowOf(
             listOf(
                 RoutingRow("qobuz", "Your Qobuz account", "not connected", RoutingState.NOT_CONFIGURED),
                 RoutingRow("tidal", "Custom Tidal server", "first above CD", RoutingState.CONFIGURED),
-                RoutingRow("relay", "Stash lossless", "configured", RoutingState.CONFIGURED),
+                RoutingRow("relay", "KRYPT AUDIO lossless", "configured", RoutingState.CONFIGURED),
             ),
         )
         val s = contributor().section()
         assertThat(s).contains("Custom Tidal server: first above CD")
-        assertThat(s.indexOf("Custom Tidal server")).isLessThan(s.indexOf("Stash lossless"))
+        assertThat(s.indexOf("Custom Tidal server")).isLessThan(s.indexOf("KRYPT AUDIO lossless"))
     }
 
     @Test fun `relays are listed by host with their cooldown and the config timestamp`() = runTest {
@@ -116,6 +116,6 @@ class LosslessDiagnosticsContributorTest {
         coEvery { losslessPrefs.enabledNow() } throws IllegalStateException("datastore closed")
         val s = contributor().section()
         assertThat(s).contains("[settings unavailable: datastore closed]")
-        assertThat(s).contains("Stash lossless: configured")
+        assertThat(s).contains("KRYPT AUDIO lossless: configured")
     }
 }

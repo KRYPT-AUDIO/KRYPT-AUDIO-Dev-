@@ -9,7 +9,7 @@ import org.junit.Test
 class AppUpdatesTest {
 
     private fun release(extra: String = "", assets: String = APK) =
-        """{"tag_name":"v0.9.122","name":"Stash 0.9.122","draft":false,"prerelease":false$extra,
+        """{"tag_name":"v0.9.122","name":"KRYPT AUDIO 0.9.122","draft":false,"prerelease":false$extra,
            "body":"## What's new\r\n- **Paste links** from [Spotify](https://x)\r\n\r\n\r\n\r\n- Sync tab","assets":[$assets]}"""
 
     @Test
@@ -17,11 +17,11 @@ class AppUpdatesTest {
         val u = AppUpdates.parseRelease(release())!!
         assertEquals("v0.9.122", u.tag)
         assertEquals("0.9.122", u.version)
-        assertEquals("https://github.com/rawnaldclark/Stash/releases/download/v0.9.122/Stash.apk", u.apkUrl)
+        assertEquals("https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev-/releases/download/v0.9.122/Stash.apk", u.apkUrl)
         assertEquals(171_411_798L, u.sizeBytes)
         // As written, line ends made plain: ReleaseNotes reads them for the sheet.
         assertEquals("## What's new\n- **Paste links** from [Spotify](https://x)\n\n\n\n- Sync tab", u.notes)
-        assertEquals("https://github.com/rawnaldclark/Stash/releases/tag/v0.9.122", u.pageUrl)
+        assertEquals("https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev-/releases/tag/v0.9.122", u.pageUrl)
     }
 
     @Test
@@ -59,6 +59,6 @@ class AppUpdatesTest {
 
     private companion object {
         const val APK = """{"name":"Stash.apk","size":171411798,
-            "browser_download_url":"https://github.com/rawnaldclark/Stash/releases/download/v0.9.122/Stash.apk"}"""
+            "browser_download_url":"https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev-/releases/download/v0.9.122/Stash.apk"}"""
     }
 }

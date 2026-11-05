@@ -48,7 +48,7 @@ import javax.inject.Singleton
  *   fall through to the network rather than surfacing the cache error as
  *   a playback failure.
  *
- * **User-Agent** uses the same hard-coded "Stash/x.y.z" pattern as
+ * **User-Agent** uses the same hard-coded "KRYPT-AUDIO/x.y.z" pattern as
  * [com.stash.core.media.preview.di.PreviewCacheModule] — the `core/media`
  * module doesn't generate a [BuildConfig] with `VERSION_NAME`, and adding
  * one just for this header would be scope creep beyond Task 7. Bump in
@@ -106,7 +106,7 @@ class StreamingMediaSourceFactory @Inject constructor(
      */
     fun createDashMediaSource(mediaItem: MediaItem, mpdUrl: String): MediaSource {
         val httpFactory = DefaultHttpDataSource.Factory()
-            .setUserAgent("Stash/0.9.26")
+            .setUserAgent("KRYPT-AUDIO/0.9.26")
             .setConnectTimeoutMs(10_000)
             .setReadTimeoutMs(30_000)
             .setAllowCrossProtocolRedirects(false)
@@ -149,7 +149,7 @@ class StreamingMediaSourceFactory @Inject constructor(
      */
     fun createUncachedDataSourceFactory(trackId: Long): DataSource.Factory {
         val httpFactory = DefaultHttpDataSource.Factory()
-            .setUserAgent("Stash/0.9.26")
+            .setUserAgent("KRYPT-AUDIO/0.9.26")
             .setConnectTimeoutMs(10_000)
             .setReadTimeoutMs(30_000)
         return DownloadModeGate.gate(

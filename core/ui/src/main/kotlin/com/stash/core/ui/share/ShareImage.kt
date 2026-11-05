@@ -37,7 +37,7 @@ object ShareImage {
     private val STAMP = DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss", Locale.ROOT)
 
     /**
-     * A safe, readable file name with the time it was made: "stash-your-october-2026-top-songs-
+     * A safe, readable file name with the time it was made: "krypt-audio-your-october-2026-top-songs-
      * 20261019-001205.png". Lower case, letters and digits joined by single hyphens; never empty.
      */
     fun fileName(stem: String, nowMs: Long, zone: ZoneId = ZoneId.systemDefault()): String {
@@ -47,7 +47,7 @@ object ShareImage {
             .take(MAX_STEM)
             .trimEnd('-')
         val stamp = Instant.ofEpochMilli(nowMs).atZone(zone).format(STAMP)
-        return (if (cleaned.isEmpty()) "stash" else cleaned) + "-" + stamp + ".png"
+        return (if (cleaned.isEmpty()) "krypt-audio" else cleaned) + "-" + stamp + ".png"
     }
 
     /** Deletes the files in [dir] last written more than [maxAgeMs] before [nowMs]. Returns how many. */

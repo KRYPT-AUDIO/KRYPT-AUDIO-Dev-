@@ -112,10 +112,10 @@ fun ShareMixSheet(
 }
 
 private fun sendLink(context: Context, name: String, count: Int, url: String) {
-    val intent = Intent(Intent.ACTION_SEND).apply { type = "text/plain"; putExtra(Intent.EXTRA_TEXT, "$name: ${pluralize(count, "track")} on Stash · $url") }
+    val intent = Intent(Intent.ACTION_SEND).apply { type = "text/plain"; putExtra(Intent.EXTRA_TEXT, "$name: ${pluralize(count, "track")} on KRYPT AUDIO · $url") }
     context.startActivity(Intent.createChooser(intent, "Share \"$name\""))
 }
 
 private fun copy(context: Context, url: String) {
-    (context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(ClipData.newPlainText("Stash mix", url))
+    (context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(ClipData.newPlainText("KRYPT AUDIO mix", url))
 }

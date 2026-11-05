@@ -184,7 +184,7 @@ class WebRemoteTest {
         r.start()
         conn.ch.send(stateFrame(doc = stateDoc(playing = false, needsGesture = true)))
         runCurrent()
-        assertThat(r.card.value!!.status).isEqualTo("Click the Stash tab once in Chrome")
+        assertThat(r.card.value!!.status).isEqualTo("Click the KRYPT AUDIO tab once in Chrome")
         r.sendNow(RemoteCommand.Play)
         assertThat(r.card.value!!.playing).isFalse()
         assertThat(r.card.value!!.needsGesture).isTrue()

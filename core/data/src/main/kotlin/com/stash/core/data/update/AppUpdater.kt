@@ -433,7 +433,7 @@ class AppUpdater internal constructor(
             // A debug build's test release (see [UpdateCheckWorker]): an APK already on the phone.
             File(java.net.URI(update.apkUrl)).copyTo(part, overwrite = true)
         } else {
-            val request = Request.Builder().url(update.apkUrl).header("User-Agent", "Stash-Android").build()
+            val request = Request.Builder().url(update.apkUrl).header("User-Agent", "KRYPT-AUDIO-Android").build()
             okHttpClient.newCall(request).execute().use { response ->
                 if (!response.isSuccessful) error("HTTP ${response.code}")
                 val body = response.body ?: error("no body")

@@ -59,7 +59,7 @@ object PreviewCacheModule {
     @Provides @Singleton
     fun provideHttpDataSourceFactory(): HttpDataSource.Factory =
         DefaultHttpDataSource.Factory()
-            .setUserAgent("Stash/0.9.12")
+            .setUserAgent("KRYPT-AUDIO/0.9.12")
             .setConnectTimeoutMs(15_000)
             .setReadTimeoutMs(15_000)
 

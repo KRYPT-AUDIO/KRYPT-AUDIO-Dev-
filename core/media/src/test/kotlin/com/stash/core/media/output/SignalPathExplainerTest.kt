@@ -63,7 +63,7 @@ class SignalPathExplainerTest {
             dspActive = true, // EQ on, but bit-perfect bypasses it
         )!!
         assertThat(v.quality).isEqualTo(SignalQuality.BIT_PERFECT)
-        assertThat(v.stages.first { it.title == "Stash" }.detail).contains("bypassed")
+        assertThat(v.stages.first { it.title == "KRYPT AUDIO" }.detail).contains("bypassed")
     }
 
     @Test fun `bit-perfect into a 16-bit-only DAC with a 24-bit source is not claimed bit-perfect`() {
@@ -88,7 +88,7 @@ class SignalPathExplainerTest {
     @Test fun `active EQ is shown as processing, not hidden`() {
         val v = SignalPathExplainer.explain(flac1644, out(rate = 44_100, mixerRate = 44_100), dspActive = true)!!
         assertThat(v.quality).isEqualTo(SignalQuality.ENHANCED)
-        assertThat(v.stages.first { it.title == "Stash" }.ok).isFalse()
+        assertThat(v.stages.first { it.title == "KRYPT AUDIO" }.ok).isFalse()
     }
 
     @Test fun `lossy source wins over everything`() {

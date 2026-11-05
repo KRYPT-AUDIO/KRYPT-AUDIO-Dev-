@@ -121,7 +121,7 @@ class WebLibraryExporter @Inject constructor(
     /** "Stash for Android 0.9.112", the writer named inside the file. */
     fun generator(): String {
         val version = runCatching { context.packageManager.getPackageInfo(context.packageName, 0).versionName }.getOrNull()
-        return listOfNotNull("Stash for Android", version).joinToString(" ")
+        return listOfNotNull("KRYPT AUDIO for Android", version).joinToString(" ")
     }
 
     private suspend fun read(nowMs: Long, generator: String?, selection: ExportSelection): WebLibraryFile {

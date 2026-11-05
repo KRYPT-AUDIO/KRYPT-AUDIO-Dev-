@@ -155,7 +155,7 @@ class LocalImportCoordinator @Inject constructor(
     private suspend fun importOne(uri: Uri) {
         // Only content:// URIs whose provider belongs to another app are read.
         require(uri.scheme == ContentResolver.SCHEME_CONTENT) { "Only content:// URIs are imported" }
-        require(!isOwnAuthority(uri.authority)) { "URIs of Stash's own providers aren't imported" }
+        require(!isOwnAuthority(uri.authority)) { "URIs of KRYPT AUDIO's own providers aren't imported" }
 
         val displayName = runCatching {
             DocumentFile.fromSingleUri(context, uri)?.name
@@ -185,7 +185,7 @@ class LocalImportCoordinator @Inject constructor(
             // refused, never given a default extension.
             val ext = claimed
                 ?: ImportedAudioType.fromContent(metadata.containerMime, metadata.hasVideo)
-                ?: throw IllegalArgumentException("Not an audio file Stash can import")
+                ?: throw IllegalArgumentException("Not an audio file KRYPT AUDIO can import")
 
             // A cancel during the copy stops here, before anything reaches the library.
             currentCoroutineContext().ensureActive()

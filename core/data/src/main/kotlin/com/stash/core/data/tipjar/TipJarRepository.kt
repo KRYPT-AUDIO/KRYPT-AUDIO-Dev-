@@ -152,7 +152,7 @@ class TipJarRepository @Inject constructor(
         // still renders something. Update whenever the JSON changes.
         private val BUNDLED_FALLBACK = TipJarPayload(
             supporters = listOf(
-                Supporter("Cedric", 10, "Just downloaded Stash to replace Spotify. This is amazing bro. Thanks for your work."),
+                Supporter("Cedric", 10, "Just downloaded KRYPT AUDIO to replace Spotify. This is amazing bro. Thanks for your work."),
                 Supporter("Slowcab", 5, "Amazing work! Keep sticking it to the man!"),
                 Supporter("RucaNebas", 5, "Awesome application! I hope continuous improvement and support"),
             ),

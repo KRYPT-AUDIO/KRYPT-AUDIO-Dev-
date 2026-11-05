@@ -54,7 +54,7 @@ class LrclibLyricsSourceTest {
         assertEquals("42", result.sourceLyricsId)
         val request = server.takeRequest()
         val ua = request.getHeader("User-Agent")
-        assertTrue("User-Agent header should mention Stash + version", ua!!.contains("Stash/0.9.36"))
+        assertTrue("User-Agent header should mention KRYPT AUDIO + version", ua!!.contains("KRYPT-AUDIO/0.9.36"))
         assertTrue(request.path!!.startsWith("/api/get"))
     }
 

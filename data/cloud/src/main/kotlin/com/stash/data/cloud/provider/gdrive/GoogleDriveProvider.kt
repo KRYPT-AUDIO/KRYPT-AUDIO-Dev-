@@ -189,7 +189,7 @@ class GoogleDriveProvider(
         val lookup = lookup(accountId, itemId, priority) { usedToken = it }
         val file = when (lookup) {
             is GoogleDriveJson.Lookup.Present -> lookup.file
-            GoogleDriveJson.Lookup.Gone -> throw CloudItemNotFoundException("Google Drive file is gone or no longer shared with Stash")
+            GoogleDriveJson.Lookup.Gone -> throw CloudItemNotFoundException("Google Drive file is gone or no longer shared with KRYPT AUDIO")
             // Connectivity-type, not a problem with this file: a scan pauses rather than filing
             // the song without its tags.
             GoogleDriveJson.Lookup.Throttled -> throw CloudUnavailableException(SLOW_DOWN)

@@ -1453,7 +1453,7 @@ class StashPlaybackService : MediaLibraryService() {
      */
     private fun cloudHttpDataSource(): androidx.media3.datasource.HttpDataSource =
         androidx.media3.datasource.DefaultHttpDataSource.Factory()
-            .setUserAgent("Stash")
+            .setUserAgent("KRYPT-AUDIO")
             .setConnectTimeoutMs(10_000)
             .setReadTimeoutMs(30_000)
             .createDataSource()
@@ -1473,7 +1473,7 @@ class StashPlaybackService : MediaLibraryService() {
 
     private fun cloudAuthorizedHttpDataSource(): androidx.media3.datasource.HttpDataSource =
         androidx.media3.datasource.okhttp.OkHttpDataSource.Factory(cloudAuthorizedClient)
-            .setUserAgent("Stash")
+            .setUserAgent("KRYPT-AUDIO")
             .createDataSource()
 
     private fun buildExoPlayer(
@@ -2604,7 +2604,7 @@ class StashPlaybackService : MediaLibraryService() {
                         .setMediaId(ROOT_ID)
                         .setMediaMetadata(
                             MediaMetadata.Builder()
-                                .setTitle("Stash Root")
+                                .setTitle("KRYPT AUDIO")
                                 .setIsBrowsable(true)
                                 .setIsPlayable(false)
                                 .build(),
@@ -2707,7 +2707,7 @@ class StashPlaybackService : MediaLibraryService() {
                 .setMediaId(ROOT_ID)
                 .setMediaMetadata(
                     MediaMetadata.Builder()
-                        .setTitle("Stash Root")
+                        .setTitle("KRYPT AUDIO")
                         .setIsBrowsable(true)
                         .setIsPlayable(false)
                         .build(),

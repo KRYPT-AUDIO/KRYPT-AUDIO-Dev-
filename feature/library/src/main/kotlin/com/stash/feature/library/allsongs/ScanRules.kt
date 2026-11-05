@@ -34,7 +34,7 @@ internal fun TreeRef.contains(child: TreeRef): Boolean {
 internal sealed class FolderConflict(val message: String) {
     /** The tree is Stash's download folder, or inside it: those songs are the Library's already. */
     data object DownloadFolder : FolderConflict(
-        "That's where Stash saves its downloads. Those songs are already in your Library.",
+        "That's where KRYPT AUDIO saves its downloads. Those songs are already in your Library.",
     )
 
     /** The tree is inside a folder All Songs already scans: every song in it is listed already. */

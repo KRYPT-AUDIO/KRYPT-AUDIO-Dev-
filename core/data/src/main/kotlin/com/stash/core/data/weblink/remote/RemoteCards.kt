@@ -38,7 +38,7 @@ data class RemoteCard(
     /** "Playing on Chrome on Windows" / "Paused on …", or the one click the browser needs before it can start the music. */
     val status: String
         get() = when {
-            needsGesture -> "Click the Stash tab once in $app"
+            needsGesture -> "Click the KRYPT AUDIO tab once in $app"
             playing -> "Playing on $deviceName"
             else -> "Paused on $deviceName"
         }

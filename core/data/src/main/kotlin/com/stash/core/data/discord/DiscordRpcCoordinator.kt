@@ -138,6 +138,6 @@ class DiscordRpcCoordinator @Inject constructor(
 
     companion object {
         private const val FALLBACK_ICON_URL =
-            "https://raw.githubusercontent.com/rawnaldclark/Stash/refs/heads/master/app/src/main/res/drawable/ic_launcher_foreground.png"
+            "https://raw.githubusercontent.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev-/refs/heads/master/app/src/main/res/drawable/ic_launcher_foreground.png"
     }
 }

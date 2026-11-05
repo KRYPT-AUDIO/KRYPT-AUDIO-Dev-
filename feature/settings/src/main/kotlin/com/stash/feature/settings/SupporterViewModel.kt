@@ -153,7 +153,7 @@ internal fun SupporterClaimUi.after(r: ClaimResult, email: String): SupporterCla
     ClaimResult.BadCode -> failed("That code didn't work. Check it, or send a new one.")
     is ClaimResult.RateLimited -> failed(rateLimitedMessage(r.retryAfterSec))
     ClaimResult.NotConfigured -> failed("Unlocking isn't available right now. Please try again later.")
-    ClaimResult.Unreachable -> failed("Couldn't reach Stash. Check your connection and try again.")
+    ClaimResult.Unreachable -> failed("Couldn't reach KRYPT AUDIO. Check your connection and try again.")
 }
 
 private fun SupporterClaimUi.failed(text: String) = copy(message = text, messageIsError = true)
@@ -164,7 +164,7 @@ private fun SupporterClaimUi.failed(text: String) = copy(message = text, message
  */
 internal fun SupporterClaimUi.unlocked(confirmed: Boolean): SupporterClaimUi =
     if (confirmed) copy(done = true, message = null)
-    else copy(message = "Code accepted. Unlimited Tidal & Qobuz shows here once Stash confirms it.", messageIsError = false)
+    else copy(message = "Code accepted. Unlimited Tidal & Qobuz shows here once KRYPT AUDIO confirms it.", messageIsError = false)
 
 /** `429` is the tip jar's rate limiter (code requests and code tries alike). */
 private fun rateLimitedMessage(retryAfterSec: Long?): String {

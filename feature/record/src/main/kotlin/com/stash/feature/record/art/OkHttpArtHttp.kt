@@ -48,6 +48,6 @@ class OkHttpArtHttp(client: OkHttpClient) : ArtHttp {
     private companion object {
         const val TIMEOUT_S = 6L
         const val MAX_BODY = 512L * 1024
-        const val USER_AGENT = "Stash/1.0 (stashfm.app)"
+        const val USER_AGENT = "KRYPT-AUDIO/1.0 (stashfm.app)"
     }
 }

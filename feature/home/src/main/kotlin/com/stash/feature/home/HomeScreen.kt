@@ -1093,7 +1093,7 @@ private fun LosslessOfflineBanner(
                     color = MaterialTheme.colorScheme.onSurface,
                 )
                 Text(
-                    text = "Stash is falling back to lossy audio. " +
+                    text = "KRYPT AUDIO is falling back to lossy audio. " +
                         "Connect your own Qobuz account for FLAC.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,

@@ -507,7 +507,7 @@ class WebLinkInbox internal constructor(
         const val MAX_SEND_PLAIN = 16 * 1024 * 1024
         private const val MAX_REMEMBERED = 100
         private const val CHECK_GAP_MS = 30_000L
-        private const val DEFAULT_NAME = "Stash on the web"
+        private const val DEFAULT_NAME = "KRYPT AUDIO on the web"
         private val SEND_ID = Regex("^[A-Za-z0-9_-]{8,64}$")
 
         const val TOO_BIG = "Too big to send. Save it as a file instead."

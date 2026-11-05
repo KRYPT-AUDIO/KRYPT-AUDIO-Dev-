@@ -165,7 +165,7 @@ class KennyyApiClient @Inject constructor(
          * User-Agent header sent on every request so the operator can
          * identify Stash traffic in their server logs.
          */
-        const val USER_AGENT: String = "Stash-Android/1.0 (+https://github.com/rawnaldclark/Stash)"
+        const val USER_AGENT: String = "KRYPT-AUDIO-Android/1.0 (+https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev-)"
 
         /**
          * Tolerant Json instance — kennyy.com.br passes Qobuz responses

@@ -136,11 +136,11 @@ class LosslessAvailabilityTest {
         assertThat(rows().map { it.id }).doesNotContain("custom")
         custom.value = "https://mine.example"
         assertThat(row("custom").state).isEqualTo(RoutingState.CONFIGURED)
-        // Before Stash lossless: QbdlxFileUrlRouter asks it first. The list used to say the reverse.
+        // Before KRYPT AUDIO lossless: QbdlxFileUrlRouter asks it first. The list used to say the reverse.
         assertThat(rows().map { it.id }).containsExactly("qobuz", "custom", "relay").inOrder()
     }
 
-    @Test fun `with a login too, the custom endpoint still comes before Stash lossless`() = runTest {
+    @Test fun `with a login too, the custom endpoint still comes before KRYPT AUDIO lossless`() = runTest {
         login.value = true; custom.value = "https://mine.example"
         assertThat(rows().map { it.id }).containsExactly("qobuz", "custom", "relay").inOrder()
     }
@@ -152,7 +152,7 @@ class LosslessAvailabilityTest {
         assertThat(a.ownTidalFirstNow(LosslessQualityTier.HI_RES)).isFalse()
     }
 
-    @Test fun `own Tidal server and no own Qobuz - it leads above CD, listed before Stash lossless`() = runTest {
+    @Test fun `own Tidal server and no own Qobuz - it leads above CD, listed before KRYPT AUDIO lossless`() = runTest {
         tidalServer.value = "https://tidal.mine.example"
         assertThat(a.ownTidalFirstNow(LosslessQualityTier.HI_RES)).isTrue()
         assertThat(a.ownTidalFirstNow(LosslessQualityTier.MAX)).isTrue()
@@ -172,7 +172,7 @@ class LosslessAvailabilityTest {
         assertThat(a.ownTidalFirstNow(LosslessQualityTier.CD)).isFalse()
     }
 
-    @Test fun `own Tidal server and own Qobuz login - Qobuz keeps the lead, Tidal after Stash lossless`() = runTest {
+    @Test fun `own Tidal server and own Qobuz login - Qobuz keeps the lead, Tidal after KRYPT AUDIO lossless`() = runTest {
         tidalServer.value = "https://tidal.mine.example"
         login.value = true
         assertThat(a.ownTidalFirstNow(LosslessQualityTier.HI_RES)).isFalse()

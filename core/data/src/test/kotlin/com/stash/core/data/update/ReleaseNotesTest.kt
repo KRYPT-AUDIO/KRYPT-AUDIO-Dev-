@@ -255,14 +255,14 @@ class ReleaseNotesTest {
 
             ## What's new
             - **One.** First. ![shot [1]](https://x/y.webp) <img src="https://x/z.png">
-            * Fix the thing by @someone in https://github.com/rawnaldclark/Stash/pull/9
+            * Fix the thing by @someone in https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev-/pull/9
             ```
             ./gradlew build
             ```
             | a | b |
             |---|---|
             - Two (#705), see https://example.com, mail a@b.co
-            **Full Changelog**: https://github.com/rawnaldclark/Stash/compare/v1...v2
+            **Full Changelog**: https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev-/compare/v1...v2
             - Never shown.
             """.trimIndent(),
         )

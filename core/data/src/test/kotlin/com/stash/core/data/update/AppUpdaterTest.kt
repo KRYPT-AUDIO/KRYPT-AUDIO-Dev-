@@ -189,7 +189,7 @@ class AppUpdaterTest {
 
         assertThat(updater.state.value).isEqualTo(UpdateState.ReadyToInstall)
         val posted = notifications.single()
-        assertThat(posted.extras.getString(Notification.EXTRA_TITLE)).isEqualTo("Stash 0.9.1 is ready to install")
+        assertThat(posted.extras.getString(Notification.EXTRA_TITLE)).isEqualTo("KRYPT AUDIO 0.9.1 is ready to install")
         assertThat(posted.extras.getCharSequence(Notification.EXTRA_TEXT).toString()).isEqualTo("Tap to install it.")
 
         // Back in front: Install now opens the held confirm, once, and the notification goes.

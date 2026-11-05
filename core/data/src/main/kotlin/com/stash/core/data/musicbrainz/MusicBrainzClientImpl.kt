@@ -143,7 +143,7 @@ class MusicBrainzClientImpl @Inject constructor(
         /** 503s retried before a back cover lookup call gives up, and the wait before each. */
         const val BUSY_RETRIES = 2
         const val BUSY_RETRY_MS = 2_000L
-        const val USER_AGENT = "Stash/1.0 ( https://github.com/rawnaldclark/Stash )"
+        const val USER_AGENT = "KRYPT-AUDIO/1.0 ( https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev- )"
         const val MIN_INTERVAL_MS = 1000L
         /**
          * Results per search. An album named like its artist is crowded: "The Beatles" by The Beatles

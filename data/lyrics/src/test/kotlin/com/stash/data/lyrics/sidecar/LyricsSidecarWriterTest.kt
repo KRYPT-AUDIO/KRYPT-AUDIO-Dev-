@@ -67,7 +67,7 @@ class LyricsSidecarWriterTest {
         assertTrue("LRC header carries artist tag: $body", body.contains("[ar:Kanye West]"))
         assertTrue("LRC header carries album tag: $body", body.contains("[al:DONDA]"))
         assertTrue("synced body present: $body", body.contains("[00:01.00]hello"))
-        assertTrue("by tag stamped: $body", body.contains("[by:Stash]"))
+        assertTrue("by tag stamped: $body", body.contains("[by:KRYPT AUDIO]"))
     }
 
     @Test fun `prefers syncedLrc, falls back to plain when synced is null`() = runTest {

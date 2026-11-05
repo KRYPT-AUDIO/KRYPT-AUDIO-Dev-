@@ -109,7 +109,7 @@ class StashMediaSourceFactory(
                 // Each delegate gated too: a placeholder whose URL was cached opens it without a resolve.
                 httpDelegate = {
                     DownloadModeGate(
-                        DefaultHttpDataSource.Factory().setUserAgent("Stash/0.9.26")
+                        DefaultHttpDataSource.Factory().setUserAgent("KRYPT-AUDIO/0.9.26")
                             .setConnectTimeoutMs(10_000).setReadTimeoutMs(30_000)
                             .createDataSource(),
                         streamAllowed,

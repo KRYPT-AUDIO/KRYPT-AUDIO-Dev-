@@ -57,7 +57,7 @@ class AppleTtmlLyricsSource(
     override val id = SOURCE_ID
     override val displayName = "Apple Music (word-synced)"
 
-    private val userAgent = "Stash/$appVersionName (Android)"
+    private val userAgent = "KRYPT-AUDIO/$appVersionName (Android)"
     private val interactiveHttp = client.newBuilder()
         .dns(lyricsDns)
         .callTimeout(INTERACTIVE_TIMEOUT_S, TimeUnit.SECONDS).build()

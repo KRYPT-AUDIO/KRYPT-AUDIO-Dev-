@@ -29,7 +29,7 @@
     <string name="play_on_browser_playing">Playing %1$s</string>
     <string name="play_on_browser_needs_click">Click the KRYPT AUDIO tab once first</string>
     <string name="play_on_browser_reload">Reload the KRYPT AUDIO tab to play there</string>
-    <string name="play_on_browser_not_open">Open play.stashfm.app to play there</string>
+    <string name="play_on_browser_not_open">Open the KRYPT AUDIO web player to play there</string>
     <!-- The browser playing this phone's music, in the sheet and on Now Playing. %1$s: the browser. -->
     <string name="play_on_playing_on">Playing on %1$s</string>
     <string name="play_on_starting_on">Starting on %1$s…</string>

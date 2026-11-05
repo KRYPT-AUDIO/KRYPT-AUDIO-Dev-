@@ -771,7 +771,7 @@
     <string name="settings_web_link_unlink_everything_desc">Tous les navigateurs associés sont désassociés d\'un seul coup. Rien n\'est supprimé des bibliothèques.</string>
     <string name="settings_web_link_action_unlink_everything">Supprimer tous les liens</string>
     <string name="settings_web_link_section_link_browser">Associer un navigateur</string>
-    <string name="settings_web_link_not_linked_instructions">Ouvrez play.stashfm.app › Paramètres › Votre téléphone</string>
+    <string name="settings_web_link_not_linked_instructions">Ouvrez le lecteur web KRYPT AUDIO › Paramètres › Votre téléphone</string>
     <string name="settings_web_link_scan_code_button">Scanner le code</string>
     <string name="settings_web_link_section_linked_devices">Appareils connectés</string>
     <string name="settings_web_link_link_another_browser">Associer un autre navigateur</string>

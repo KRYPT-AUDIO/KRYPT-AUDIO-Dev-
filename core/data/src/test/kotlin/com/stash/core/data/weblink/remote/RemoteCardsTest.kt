@@ -48,7 +48,7 @@ class RemoteCardsTest {
     @Test fun `a tab nobody clicked asks for one click, naming the browser alone`() {
         val c = RemoteCards.pick(listOf(browser(st = state(playing = false, needsGesture = true))), now = 1_000)!!
         assertThat(c.needsGesture).isTrue()
-        assertThat(c.status).isEqualTo("Click the Stash tab once in Chrome")
+        assertThat(c.status).isEqualTo("Click the KRYPT AUDIO tab once in Chrome")
         assertThat(RemoteCards.appName("Firefox on Mac")).isEqualTo("Firefox")
         assertThat(RemoteCards.appName("Office PC")).isEqualTo("Office PC")
         // A play can't start it, so the card doesn't pretend it did.

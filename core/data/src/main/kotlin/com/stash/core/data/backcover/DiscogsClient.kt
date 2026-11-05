@@ -154,7 +154,7 @@ class DiscogsClientImpl @Inject constructor(
     private companion object {
         const val BASE = "https://api.discogs.com/"
         const val CALL_TIMEOUT_SECONDS = 10L
-        const val USER_AGENT = "Stash/1.0 ( https://github.com/rawnaldclark/Stash )"
+        const val USER_AGENT = "KRYPT-AUDIO/1.0 ( https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev- )"
 
         /** Unauthenticated, Discogs allows 25 calls a minute per IP (x-discogs-ratelimit, 2026-10-24). */
         const val MIN_INTERVAL_MS = 2_500L

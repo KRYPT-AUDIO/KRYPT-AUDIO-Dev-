@@ -74,7 +74,7 @@ class TestPlaybackHelper @Inject constructor(
         Track(
             id = TEST_TRACK_ID_1,
             title = "Test Track — Silence I",
-            artist = "Stash Dev",
+            artist = "KRYPT AUDIO Dev",
             album = "Test Album",
             durationMs = TEST_DURATION_MS,
             filePath = audioUri,
@@ -86,7 +86,7 @@ class TestPlaybackHelper @Inject constructor(
         Track(
             id = TEST_TRACK_ID_2,
             title = "Test Track — Silence II",
-            artist = "Stash Dev",
+            artist = "KRYPT AUDIO Dev",
             album = "Test Album",
             durationMs = TEST_DURATION_MS,
             filePath = audioUri,
@@ -98,7 +98,7 @@ class TestPlaybackHelper @Inject constructor(
         Track(
             id = TEST_TRACK_ID_3,
             title = "Test Track — Silence III",
-            artist = "Stash Dev",
+            artist = "KRYPT AUDIO Dev",
             album = "Test Album",
             durationMs = TEST_DURATION_MS,
             filePath = audioUri,

@@ -74,7 +74,7 @@ class MetadataEmbedderArgsTest {
             albumArtFile = null,
             appVersion = versionProvider,
         )
-        assertTrue("ENCODER=Stash 0.9.35" in args.zipMetadataValues())
+        assertTrue("ENCODER=KRYPT AUDIO 0.9.35" in args.zipMetadataValues())
     }
 
     @Test fun `attaches art when albumArtFile is non-null and exists`() {
@@ -112,7 +112,7 @@ class MetadataEmbedderArgsTest {
     }
 
     /**
-     * Locks in the Opus cover-art strategy from rawnaldclark/Stash#95:
+     * Locks in the Opus cover-art strategy:
      * the argv MUST carry a `METADATA_BLOCK_PICTURE=` Vorbis comment and
      * MUST NOT use the `attached_pic` mux path (which fails Ogg with
      * exit 234), and MUST NOT add a second `-i artFile` input. Companion

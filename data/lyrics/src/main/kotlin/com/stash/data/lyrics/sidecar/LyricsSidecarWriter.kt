@@ -200,7 +200,7 @@ class LyricsSidecarWriter @Inject constructor(
             val sec = (track.durationMs / 1000).toInt()
             appendLine("[length:${sec / 60}:%02d]".format(sec % 60))
         }
-        appendLine("[by:Stash]")
+        appendLine("[by:KRYPT AUDIO]")
         append(lyrics.syncedLrc?.takeUnless(String::isBlank) ?: lyrics.plainText.orEmpty())
     }
 

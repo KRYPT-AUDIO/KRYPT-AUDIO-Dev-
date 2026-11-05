@@ -155,13 +155,13 @@ class BackgroundWorkDiagnosticsContributorTest {
 
         assertThat(contributor().section()).startsWith(
             """
-            Android's rules for Stash:
+            Android's rules for KRYPT AUDIO:
               Battery optimization:  unrestricted
               Background restricted: yes
               App standby bucket:    rare
               Battery saver:         on
               Dozing now:            yes
-              Data Saver:            on (Stash allowed)
+              Data Saver:            on (KRYPT AUDIO allowed)
               Notifications allowed: no
             """.trimIndent(),
         )

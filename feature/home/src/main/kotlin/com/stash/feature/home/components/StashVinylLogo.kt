@@ -48,7 +48,7 @@ fun StashVinylLogo(modifier: Modifier = Modifier, size: Dp = 64.dp) {
 
     Image(
         painter = painterResource(R.drawable.vinyl_record),
-        contentDescription = "Stash logo",
+        contentDescription = "KRYPT AUDIO logo",
         modifier = modifier
             .size(size)
             .graphicsLayer {

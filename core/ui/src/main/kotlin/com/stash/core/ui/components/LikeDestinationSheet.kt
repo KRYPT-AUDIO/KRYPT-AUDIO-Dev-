@@ -62,7 +62,7 @@ fun LikeDestinationSheet(
             Spacer(modifier = Modifier.height(8.dp))
 
             DestinationRow(
-                label = "Stash Liked Songs",
+                label = "KRYPT AUDIO Liked Songs",
                 subtitle = if (state.stashAlreadySaved) "✓ Already saved" else null,
                 checked = stashChecked,
                 onCheckedChange = { stashChecked = it },

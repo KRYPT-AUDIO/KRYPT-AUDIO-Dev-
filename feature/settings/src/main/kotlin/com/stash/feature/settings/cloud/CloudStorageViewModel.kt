@@ -221,7 +221,7 @@ class CloudStorageViewModel @Inject constructor(
         viewModelScope.launch {
             uploads.setBackup(accountId, on)
             _messages.tryEmit(
-                if (on) "New downloads will be saved to the Stash folder in your Google Drive."
+                if (on) "New downloads will be backed up to Google Drive."
                 else "Backup is off. Songs already in your Drive stay there.",
             )
         }

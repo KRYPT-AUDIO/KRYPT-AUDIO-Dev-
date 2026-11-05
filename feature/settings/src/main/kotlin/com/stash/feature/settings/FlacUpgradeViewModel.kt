@@ -114,7 +114,7 @@ internal fun flacUpgradeUiState(infos: List<WorkInfo>, tap: FlacSweepResult?): F
 }
 
 private fun tapMessage(tap: FlacSweepResult?): String? = when (tap) {
-    FlacSweepResult.StreamingMode -> "Stash is set to Online, so there are no downloads to upgrade."
+    FlacSweepResult.StreamingMode -> "KRYPT AUDIO is set to Online, so there are no downloads to upgrade."
     FlacSweepResult.LosslessDisabled -> "Set Download quality to Lossless in Audio & Quality first."
     FlacSweepResult.NothingToUpgrade ->
         "Nothing to upgrade. Every downloaded track is FLAC already or was checked in the last two weeks."

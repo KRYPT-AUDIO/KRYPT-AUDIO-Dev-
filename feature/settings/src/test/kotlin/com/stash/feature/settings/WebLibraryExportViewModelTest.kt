@@ -145,7 +145,7 @@ class WebLibraryExportViewModelTest {
         val file = WebLibraryFile(exportedAt = "2026-10-10T00:00:00.000Z", likes = emptyList(), playlists = emptyList(), history = emptyList())
         val chosen = slot<ExportSelection>()
         coEvery { exporter.collect(any(), any(), capture(chosen)) } returns file
-        every { exporter.generator() } returns "Stash for Android test"
+        every { exporter.generator() } returns "KRYPT AUDIO for Android test"
         every { exporter.text(file) } returns "{}"
         coEvery { inbox.send(chrome.id, "{}") } returns SendOutcome.Sent
         val vm = vm()

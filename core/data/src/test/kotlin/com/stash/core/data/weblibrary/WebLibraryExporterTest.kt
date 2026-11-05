@@ -201,12 +201,12 @@ class WebLibraryExporterTest {
 
     private suspend fun golden(): ByteArray {
         fill()
-        return bytesOf(exporter.collect(nowMs = T + 5_000, generator = "Stash for Android (golden)"))
+        return bytesOf(exporter.collect(nowMs = T + 5_000, generator = "KRYPT AUDIO for Android (golden)"))
     }
 
     @Test fun `the file holds your likes, your playlists in order and your plays, newest first`() = runTest {
         fill()
-        val file = exporter.collect(nowMs = T + 5_000, generator = "Stash for Android 1.0")
+        val file = exporter.collect(nowMs = T + 5_000, generator = "KRYPT AUDIO for Android 1.0")
 
         assertEquals("stash-web-library", file.kind)
         assertEquals(1, file.v)
@@ -487,6 +487,6 @@ class WebLibraryExporterTest {
 
         val EXPORT_URI: Uri = Uri.parse("content://com.stash.test.export/stash-library-2025-10-07.json")
 
-        const val GOLDEN_SHA256 = "0810e42571ca36d1ee2209935604307a23c11b36166bee54518626b0b6b710e2"
+        const val GOLDEN_SHA256 = "07b8df43b6e7c549f3fbc0a41c43190716985b94a90a47818b81c4484825f785"
     }
 }

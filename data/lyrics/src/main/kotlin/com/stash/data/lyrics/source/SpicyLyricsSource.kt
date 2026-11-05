@@ -48,7 +48,7 @@ class SpicyLyricsSource(
     override val displayName = DISPLAY_NAME
     override val onDemandOnly = true
 
-    private val userAgent = "Stash/$appVersionName (Android)"
+    private val userAgent = "KRYPT-AUDIO/$appVersionName (Android)"
     private val interactiveHttp = client.newBuilder().dns(lyricsDns).callTimeout(4, TimeUnit.SECONDS).build()
     private val backgroundHttp = client.newBuilder().dns(lyricsDns).callTimeout(10, TimeUnit.SECONDS).build()
 

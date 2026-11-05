@@ -39,7 +39,7 @@ class DiscogsClientTest {
         assertThat(release.page).startsWith("https://www.discogs.com/release/7557957")
         val req = server.takeRequest()
         assertThat(req.path).isEqualTo("/releases/7557957")
-        assertThat(req.getHeader("User-Agent")).contains("Stash")
+        assertThat(req.getHeader("User-Agent")).contains("KRYPT-AUDIO")
     }
 
     @Test fun `a master's versions are asked for by format and parsed`() = runTest {

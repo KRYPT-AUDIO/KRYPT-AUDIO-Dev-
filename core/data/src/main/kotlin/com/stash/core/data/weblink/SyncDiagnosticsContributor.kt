@@ -23,7 +23,7 @@ class SyncDiagnosticsContributor @Inject constructor(
     private val engine: MirrorEngine,
     private val handoff: HandoffPrefs,
 ) : DiagnosticsContributor {
-    override val title: String = "Link Stash on the web"
+    override val title: String = "Link KRYPT AUDIO on the web"
 
     /** Test seam for the clock. */
     internal var nowMs: () -> Long = System::currentTimeMillis

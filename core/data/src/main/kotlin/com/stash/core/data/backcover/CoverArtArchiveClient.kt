@@ -108,7 +108,7 @@ class CoverArtArchiveClientImpl @Inject constructor(
         const val RETRIES = 2
         const val RETRY_MS = 1_000L
         const val TAG = "BackCover"
-        const val USER_AGENT = "Stash/1.0 ( https://github.com/rawnaldclark/Stash )"
+        const val USER_AGENT = "KRYPT-AUDIO/1.0 ( https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev- )"
     }
 }
 

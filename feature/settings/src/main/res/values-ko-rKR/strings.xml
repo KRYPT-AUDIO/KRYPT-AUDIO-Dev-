@@ -740,7 +740,7 @@
     <string name="settings_web_link_unlink_everything_desc">연결된 모든 브라우저의 연결이 한 번에 해제됩니다. 어떤 라이브러리에서도 항목이 삭제되지는 않습니다</string>
     <string name="settings_web_link_action_unlink_everything">모두 연결 해제</string>
     <string name="settings_web_link_section_link_browser">브라우저 연결</string>
-    <string name="settings_web_link_not_linked_instructions">play.stashfm.app › Settings › Your phone 열기</string>
+    <string name="settings_web_link_not_linked_instructions">KRYPT AUDIO 웹 플레이어 › 설정 › 내 휴대전화 열기</string>
     <string name="settings_web_link_scan_code_button">코드 스캔</string>
     <string name="settings_web_link_section_linked_devices">연결된 기기</string>
     <string name="settings_web_link_link_another_browser">다른 브라우저 연결</string>

@@ -1123,7 +1123,7 @@ private fun LikedTab(
     // Sift chips: "All" plus only the origins that actually have likes.
     val sift = buildList {
         add("All" to LikedFilter.ALL)
-        if (LikedFilter.STASH in sources) add("Stash" to LikedFilter.STASH)
+        if (LikedFilter.STASH in sources) add("KRYPT AUDIO" to LikedFilter.STASH)
         if (LikedFilter.SPOTIFY in sources) add("Spotify" to LikedFilter.SPOTIFY)
         if (LikedFilter.YOUTUBE in sources) add("YouTube" to LikedFilter.YOUTUBE)
         if (LikedFilter.SOUNDCLOUD in sources) add("SoundCloud" to LikedFilter.SOUNDCLOUD)

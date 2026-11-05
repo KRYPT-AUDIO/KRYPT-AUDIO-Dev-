@@ -123,7 +123,7 @@ class LrclibLyricsSource @Inject constructor(
     }
 
     private fun userAgent(): String =
-        "Stash/${appVersion.versionName} (https://github.com/rawnaldclark/Stash)"
+        "KRYPT-AUDIO/${appVersion.versionName} (https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev-)"
 
     companion object {
         const val DEFAULT_BASE_URL = "https://lrclib.net/"

@@ -308,7 +308,7 @@ class MetadataEmbedder @Inject constructor(
             // Vorbis-comment way to carry cover art is METADATA_BLOCK_PICTURE:
             // a base64-encoded FLAC Picture block, passed via -metadata. All
             // other containers (M4A, MP3, FLAC) keep using the attached_pic
-            // stream mapping. Fixes rawnaldclark/Stash#95.
+            // stream mapping, avoiding the unsupported mux option for these containers.
             val outputExt = outputFile.extension.lowercase()
             val supportsAttachedPic = outputExt !in OPUS_OGG_EXTENSIONS
             val hasArt = albumArtFile != null && albumArtFile.exists() && albumArtFile.length() > 0
@@ -345,7 +345,7 @@ class MetadataEmbedder @Inject constructor(
                 add("-metadata"); add("ISRC=${sanitize(it)}")
             }
 
-            add("-metadata"); add("ENCODER=Stash ${appVersion.versionName}")
+            add("-metadata"); add("ENCODER=KRYPT AUDIO ${appVersion.versionName}")
 
             // Opus / Ogg cover art: build a FLAC Picture block from the JPEG
             // bytes, base64-encode it (NO_WRAP — ffmpeg's metadata value parser

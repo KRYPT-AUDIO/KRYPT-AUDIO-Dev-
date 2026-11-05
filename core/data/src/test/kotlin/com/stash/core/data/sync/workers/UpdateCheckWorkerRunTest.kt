@@ -48,8 +48,8 @@ class UpdateCheckWorkerRunTest {
         // The tag as GitHub might send it, with a stray space: it is trimmed like the stored release's.
         File(context.filesDir, "update_test.json").writeText(
             """
-            {"tag_name":" v0.9.123 ","name":"Stash v0.9.123","draft":false,"prerelease":false,
-             "body":"Paste links from SoundCloud. Sync tab OVERHAUL!\r\n\r\n## What's new\r\n- **SoundCloud.** Sync it.\r\n\r\n## What's Changed\r\n* Things by @someone in https://github.com/rawnaldclark/Stash/pull/1",
+            {"tag_name":" v0.9.123 ","name":"KRYPT AUDIO v0.9.123","draft":false,"prerelease":false,
+             "body":"Paste links from SoundCloud. Sync tab OVERHAUL!\r\n\r\n## What's new\r\n- **SoundCloud.** Sync it.\r\n\r\n## What's Changed\r\n* Things by @someone in https://github.com/KRYPT-AUDIO/KRYPT-AUDIO-Dev-/pull/1",
              "assets":[{"name":"Stash.apk","size":10,"browser_download_url":"${apk.toURI()}"}]}
             """.trimIndent(),
         )
@@ -59,11 +59,11 @@ class UpdateCheckWorkerRunTest {
         runBlocking { TestListenableWorkerBuilder<UpdateCheckWorker>(context).build().doWork() }
 
     @Test
-    fun `a newer release posts Stash 0_9_123 is ready over the notes' first line, with Stash's own icon`() {
+    fun `a newer release posts KRYPT AUDIO 0_9_123 is ready over the notes' first line, with KRYPT AUDIO's own icon`() {
         assertThat(run()).isInstanceOf(ListenableWorker.Result.Success::class.java)
 
         val posted = notifications.single()
-        assertThat(posted.extras.getString(Notification.EXTRA_TITLE)).isEqualTo("Stash 0.9.123 is ready")
+        assertThat(posted.extras.getString(Notification.EXTRA_TITLE)).isEqualTo("KRYPT AUDIO 0.9.123 is ready")
         assertThat(posted.extras.getCharSequence(Notification.EXTRA_TEXT).toString())
             .isEqualTo("Paste links from SoundCloud. Sync tab OVERHAUL!")
         assertThat(posted.extras.getCharSequence(Notification.EXTRA_BIG_TEXT).toString())

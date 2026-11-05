@@ -221,7 +221,7 @@ class ExoRecapPreviewEngine @Inject constructor(
 
     private companion object {
         /** Same hard-coded agent as StreamingMediaSourceFactory (core/media has no BuildConfig). */
-        const val USER_AGENT = "Stash/0.9.26"
+        const val USER_AGENT = "KRYPT-AUDIO/0.9.26"
 
         /**
          * Audible fast (READY at 250 ms of audio), and a story card is ~6 s long, so buffer

@@ -113,7 +113,7 @@ object SignalPathExplainer {
         // 2. Decoder → output stage
         val dspInPath = dspActive && output.mixer != MixerPath.BIT_PERFECT
         stages += SignalStage(
-            title = "Stash",
+            title = "KRYPT AUDIO",
             detail = when {
                 output.mixer == MixerPath.BIT_PERFECT ->
                     "Untouched · EQ and normalization bypassed for bit-perfect"
