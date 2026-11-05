@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Settings › Library & Storage: "Export for Stash on the web" (the web player's library file). -->
-    <string name="web_library_export_title">Stash na web</string>
+    <string name="web_library_export_title">KRYPT AUDIO na web</string>
     <string name="web_library_export_subtitle">Depois, no player da web: Configurações › Sua biblioteca › Importar</string>
-    <string name="web_library_export_button">Exportar para Stash na web</string>
+    <string name="web_library_export_button">Exportar para KRYPT AUDIO na web</string>
     <string name="web_library_export_working_title">Exportando sua biblioteca</string>
     <string name="web_library_export_done_title">Pronto para a web</string>
     <!-- %1$s likes, %2$s playlists, %3$s plays: the three counts below. -->
-    <string name="web_library_export_done_body">%1$s, %2$s e %3$s salvos. Abra Stash na web e importe este arquivo em Configurações › Sua biblioteca.</string>
+    <string name="web_library_export_done_body">%1$s, %2$s e %3$s salvos. Abra KRYPT AUDIO na web e importe este arquivo em Configurações › Sua biblioteca.</string>
     <plurals name="web_library_export_likes">
         <item quantity="one">%d curtida</item>
         <item quantity="other">%d curtidas</item>
@@ -23,7 +23,7 @@
     <string name="web_library_export_failed_title">Não foi possível exportar</string>
     <string name="web_library_export_failed_body">O arquivo não pôde ser gravado. Tente novamente ou escolha outro local para salvá-lo.</string>
     <string name="web_library_export_ok">OK</string>
-    <string name="web_library_import_button">Importar de Stash na web</string>
+    <string name="web_library_import_button">Importar de KRYPT AUDIO na web</string>
     <!-- %1$s: the browser's name ("Chrome on Windows"). -->
     <string name="web_library_sent_title">Enviado</string>
     <!-- %1$s the browser, %2$s likes, %3$s playlists, %4$s plays. -->
@@ -35,7 +35,7 @@
     <string name="settings_attach_most_recent_crash">Anexar o último travamento a um relatório de bug</string>
     <string name="settings_no_recent_crashes">Nenhuma falha recente.</string>
     <string name="settings_no_crash_report_toast">Nenhum relatório de falha para compartilhar.</string>
-    <string name="settings_crash_report_subject">Relatório de falha Stash</string>
+    <string name="settings_crash_report_subject">Relatório de falha KRYPT AUDIO</string>
     <string name="settings_share_crash_report_chooser">Compartilhar relatório de falha</string>
     <string name="settings_no_app_share_report_toast">Nenhum aplicativo disponível para compartilhar o relatório.</string>
     <string name="settings_share_diagnostics_bundle">Compartilhar diagnósticos</string>
@@ -64,13 +64,13 @@
     <string name="settings_search_placeholder">Pesquisar nas configurações</string>
     <string name="settings_search_clear">Limpar pesquisa</string>
     <!-- Settings > Support Banner -->
-    <string name="settings_support_title">Apoie o Stash</string>
-    <string name="settings_support_subtitle">Stash é gratuito e feito por voluntários. Se for útil para você, considere apoiar o projeto.</string>
+    <string name="settings_support_title">Apoie o KRYPT AUDIO</string>
+    <string name="settings_support_subtitle">KRYPT AUDIO é gratuito e feito por voluntários. Se for útil para você, considere apoiar o projeto.</string>
     <string name="settings_support_donate">Doar</string>
-    <string name="settings_donate_sheet_title">Apoie o Stash</string>
-    <string name="settings_donate_sheet_thanks">O Stash é gratuito. Obrigado por ajudar a mantê-lo no ar.</string>
-    <string name="settings_donate_role_owner">Criador do Stash, desenvolvedor principal</string>
-    <string name="settings_donate_role_codev">Codesenvolve o Stash</string>
+    <string name="settings_donate_sheet_title">Apoie o KRYPT AUDIO</string>
+    <string name="settings_donate_sheet_thanks">O KRYPT AUDIO é gratuito. Obrigado por ajudar a mantê-lo no ar.</string>
+    <string name="settings_donate_role_owner">Criador do KRYPT AUDIO, desenvolvedor principal</string>
+    <string name="settings_donate_role_codev">Codesenvolve o KRYPT AUDIO</string>
     <string name="settings_donate_kofi">Ko-fi</string>
     <string name="settings_donate_paypal">PayPal</string>
     <string name="settings_donate_sponsors">GitHub Sponsors</string>
@@ -85,7 +85,7 @@
     <string name="settings_enable">Habilitar</string>
     <string name="settings_disable">Desativar</string>
     <string name="settings_discord_risk_title">Antes de conectar Discord</string>
-    <string name="settings_discord_risk_body">O Discord não oferece uma forma oficial de um aplicativo para celular definir seu status, então o Stash faz login como você e usa a sessão da sua própria conta. As regras do Discord consideram isso um self-bot e permitem que a plataforma tome medidas contra a conta.\n\nA fiscalização mira mais o spam do que as atualizações de status, então isso é improvável — mas a conta é sua, e a decisão cabe a você.\n\nAo desconectar, seu status é apagado e o token é excluído deste celular.</string>
+    <string name="settings_discord_risk_body">O Discord não oferece uma forma oficial de um aplicativo para celular definir seu status, então o KRYPT AUDIO faz login como você e usa a sessão da sua própria conta. As regras do Discord consideram isso um self-bot e permitem que a plataforma tome medidas contra a conta.\n\nA fiscalização mira mais o spam do que as atualizações de status, então isso é improvável — mas a conta é sua, e a decisão cabe a você.\n\nAo desconectar, seu status é apagado e o token é excluído deste celular.</string>
     <string name="settings_discord_risk_connect">Conectar mesmo assim</string>
     <string name="settings_discord_finish_connecting">Concluir a conexão</string>
     <!-- Settings > Accounts > Discord Login & Token -->
@@ -104,7 +104,7 @@
     <string name="settings_account_not_connected">Não conectado</string>
     <string name="settings_like_mirror_row_title">Curtir também no %1$s</string>
     <string name="settings_like_mirror_lastfm_title">Dar Love também no Last.fm</string>
-    <string name="settings_like_mirror_row_subtitle">A partir de agora, as músicas que você marcar com um coração no Stash serão sincronizadas</string>
+    <string name="settings_like_mirror_row_subtitle">A partir de agora, as músicas que você marcar com um coração no KRYPT AUDIO serão sincronizadas</string>
     <string name="settings_like_status_up_to_date">Atualizado</string>
     <string name="settings_like_status_waiting">Pendentes: %1$d</string>
     <string name="settings_like_status_offline">Pendentes: %1$d · aguardando conexão</string>
@@ -123,10 +123,10 @@
     <string name="settings_account_connect">Conectar</string>
     <!-- Settings > Accounts > DisconnectAccountDialog -->
     <string name="settings_disconnect_account_title">Desconectar %1$s?</string>
-    <string name="settings_disconnect_account_body">O Stash desconecta sua conta de %1$s neste celular e interrompe a sincronização. As músicas de %1$s que ainda estão aguardando para ser baixadas são removidas da fila.\n\nAs músicas que você já baixou continuam na sua biblioteca, e você pode reconectar a conta quando quiser.</string>
+    <string name="settings_disconnect_account_body">O KRYPT AUDIO desconecta sua conta de %1$s neste celular e interrompe a sincronização. As músicas de %1$s que ainda estão aguardando para ser baixadas são removidas da fila.\n\nAs músicas que você já baixou continuam na sua biblioteca, e você pode reconectar a conta quando quiser.</string>
     <!-- Settings > Accounts > LikeMirrorWarningDialog -->
     <string name="settings_like_mirror_warning_title">Sincronizar curtidas com %1$s?</string>
-    <string name="settings_like_mirror_risk_body">Ao marcar uma música com coração no Stash, você também vai curti-la no %1$s; ao remover o coração, essa curtida é desfeita, mas nunca uma que já estava lá. Só as curtidas adicionadas a partir de agora são sincronizadas.\n\nIsso usa o endpoint privado do player web do %1$s, não uma API oficial. Pode parar de funcionar a qualquer momento e, raramente, o acesso não oficial pode sinalizar uma conta.</string>
+    <string name="settings_like_mirror_risk_body">Ao marcar uma música com coração no KRYPT AUDIO, você também vai curti-la no %1$s; ao remover o coração, essa curtida é desfeita, mas nunca uma que já estava lá. Só as curtidas adicionadas a partir de agora são sincronizadas.\n\nIsso usa o endpoint privado do player web do %1$s, não uma API oficial. Pode parar de funcionar a qualquer momento e, raramente, o acesso não oficial pode sinalizar uma conta.</string>
     <string name="settings_like_mirror_warning_confirm">Eu entendo</string>
     <!-- Settings > Accounts > YouTubeHistorySyncSection -->
     <!-- Settings > Accounts > YouTubeProfileSheet -->
@@ -139,11 +139,11 @@
     <string name="settings_yt_status_protocol_broken">Desativado devido a erros – será reativado na próxima atualização</string>
     <string name="settings_yt_status_disabled">Desligado</string>
     <string name="settings_yt_sync_dialog_title">Adicionar suas reproduções ao histórico do YouTube Music?</string>
-    <string name="settings_yt_sync_dialog_body">As músicas que você termina no Stash aparecem no seu histórico do YouTube Music, para que as recomendações aprendam com elas.</string>
-    <string name="settings_yt_sync_dialog_risk_body">Isso usa um endpoint não oficial do YouTube. Pode parar de funcionar e há uma pequena chance de o YouTube aplicar limite de requisições à sua conta. O Stash se pausa sozinho se detectar erros.</string>
+    <string name="settings_yt_sync_dialog_body">As músicas que você termina no KRYPT AUDIO aparecem no seu histórico do YouTube Music, para que as recomendações aprendam com elas.</string>
+    <string name="settings_yt_sync_dialog_risk_body">Isso usa um endpoint não oficial do YouTube. Pode parar de funcionar e há uma pequena chance de o YouTube aplicar limite de requisições à sua conta. O KRYPT AUDIO se pausa sozinho se detectar erros.</string>
     <!-- Settings > Accounts > LikeMirrorSection -->
     <!-- Settings > Accounts > LastFmSection -->
-    <string name="settings_lastfm_waiting_approval_body">Aprove o Stash no last.fm e toque em Concluir.</string>
+    <string name="settings_lastfm_waiting_approval_body">Aprove o KRYPT AUDIO no last.fm e toque em Concluir.</string>
     <string name="settings_lastfm_finish_connecting">Concluir</string>
     <string name="settings_lastfm_connected_as">Conectado como %1$s</string>
     <string name="settings_lastfm_first_artist_only_title">Scrobble apenas o primeiro artista</string>
@@ -193,16 +193,16 @@
     <string name="settings_cycle_album_art_subtitle">Mostra aos poucos o verso e as páginas internas do álbum, quando houver</string>
     <string name="settings_ambient_style_soft_glow">Brilho suave</string>
     <string name="settings_ambient_style_classic">Clássico</string>
-    <string name="settings_open_stash_on_section">Abra Stash em</string>
+    <string name="settings_open_stash_on_section">Abra KRYPT AUDIO em</string>
     <string name="settings_start_tab_home">Início</string>
     <string name="settings_start_tab_library">Biblioteca</string>
     <string name="settings_start_tab_search">Procurar</string>
     <string name="settings_home_layout_section">Layout inicial</string>
     <string name="settings_home_layout_desc">Organize as seções da página inicial ou oculte as que não usa. O destaque “Daily Discover &amp; seus mixes” permanece no topo.</string>
-    <string name="settings_home_section_community_desc">Listas de reprodução e músicas de que outros ouvintes do Stash gostam. Suas postagens mostram seu nome.</string>
+    <string name="settings_home_section_community_desc">Listas de reprodução e músicas de que outros ouvintes do KRYPT AUDIO gostam. Suas postagens mostram seu nome.</string>
     <string name="settings_home_section_listening_desc">Reproduções recentes e seu histórico. Aparece após a primeira reprodução.</string>
     <string name="settings_home_show_liked_title">Mostrar músicas curtidas na página inicial</string>
-    <string name="settings_home_show_liked_subtitle">Suas curtidas do Stash, Spotify e YouTube em um único cartão em Suas playlists.</string>
+    <string name="settings_home_show_liked_subtitle">Suas curtidas do KRYPT AUDIO, Spotify e YouTube em um único cartão em Suas playlists.</string>
     <string name="settings_home_section_discover">Daily Discover &amp; seus mixes</string>
     <string name="settings_home_section_your_playlists">Suas listas de reprodução</string>
     <string name="settings_home_section_new_releases">Novos lançamentos</string>
@@ -272,14 +272,14 @@
     <string name="settings_lossy_fallback_switch_label">JioSaavn, depois YouTube, quando não há equivalente sem perdas</string>
     <string name="settings_lossy_fallback_switch_label_aac">JioSaavn, depois YouTube, quando o Tidal não tem AAC</string>
     <string name="settings_advanced">Avançado</string>
-    <string name="settings_custom_relay_desc">Configure o Stash para usar seu próprio servidor de retransmissão sem perdas. Ele tem prioridade sobre o do Stash.</string>
+    <string name="settings_custom_relay_desc">Configure o KRYPT AUDIO para usar seu próprio servidor de retransmissão sem perdas. Ele tem prioridade sobre o do KRYPT AUDIO.</string>
     <string name="settings_custom_endpoint_label">Endpoint sem perdas personalizado</string>
     <string name="settings_url_placeholder">https://…</string>
     <string name="settings_test">Teste</string>
     <string name="settings_testing">Testando…</string>
     <string name="settings_reachable">Acessível</string>
     <string name="settings_not_reachable">Inacessível</string>
-    <string name="settings_bitchord_desc">Opcional: use seu próprio servidor BitChord para Tidal em vez do Stash. Caso contrário, deixe em branco.</string>
+    <string name="settings_bitchord_desc">Opcional: use seu próprio servidor BitChord para Tidal em vez do KRYPT AUDIO. Caso contrário, deixe em branco.</string>
     <string name="settings_bitchord_server_label">Servidor Tidal personalizado (opcional)</string>
     <string name="settings_access_token_label">Token de acesso (opcional)</string>
     <string name="settings_bitchord_token_saved">Token salvo</string>
@@ -362,7 +362,7 @@
     <string name="settings_lyrics_recheck_title">Verificar novamente a biblioteca em busca de letras sincronizadas por palavra</string>
     <string name="settings_lyrics_recheck_desc">Busca letras sincronizadas para as músicas que ainda não as têm. A operação é executada lentamente em segundo plano.</string>
     <string name="settings_lyrics_recheck_dialog_title">Verificar sua biblioteca novamente?</string>
-    <string name="settings_lyrics_recheck_dialog_body">O Stash consulta os serviços de letras para cada música que ainda não tem letras sincronizadas por palavra, uma a cada poucos segundos; por isso, uma biblioteca grande pode levar horas. A tarefa só é executada via Wi-Fi quando a bateria está com carga suficiente, e você pode cancelá-la a qualquer momento. As músicas para as quais nada for encontrado mantêm as letras que já têm.</string>
+    <string name="settings_lyrics_recheck_dialog_body">O KRYPT AUDIO consulta os serviços de letras para cada música que ainda não tem letras sincronizadas por palavra, uma a cada poucos segundos; por isso, uma biblioteca grande pode levar horas. A tarefa só é executada via Wi-Fi quando a bateria está com carga suficiente, e você pode cancelá-la a qualquer momento. As músicas para as quais nada for encontrado mantêm as letras que já têm.</string>
     <string name="settings_lyrics_recheck_dialog_confirm">Verificar novamente</string>
     <string name="settings_lyrics_recheck_progress">Verificando… %1$,d / %2$,d</string>
     <string name="settings_lyrics_recheck_starting">Verificando…</string>
@@ -383,7 +383,7 @@
     <string name="settings_download_mode_wifi_any_desc">No Wi-Fi, carregando ou não.</string>
     <string name="settings_download_mode_any_network_label">Qualquer rede</string>
     <string name="settings_download_mode_any_network_desc">Também com dados móveis.</string>
-    <string name="settings_stash_mixes_title">Stash Mixes (beta)</string>
+    <string name="settings_stash_mixes_title">KRYPT AUDIO Mixes (beta)</string>
     <string name="settings_stash_mixes_subtitle_enabled">Daily Discover, Deep Cuts e First Listen se atualizam por conta própria</string>
     <string name="settings_stash_mixes_subtitle_disabled">Mixes ocultos; sem descobertas em segundo plano</string>
     <string name="settings_qobuz_discovery_title">Descobertas do Qobuz na página inicial</string>
@@ -393,7 +393,7 @@
     <string name="settings_listening_history_title">Histórico de escuta</string>
     <string name="settings_listening_history_paused_subtitle">Pausado: novas escutas não são salvas</string>
     <string name="settings_listening_history_active_subtitle">Pausar ou limpar o que este telefone lembra</string>
-    <string name="settings_web_link_nav_title">Vincular Stash à versão web</string>
+    <string name="settings_web_link_nav_title">Vincular KRYPT AUDIO à versão web</string>
     <string name="settings_web_link_nav_subtitle">Continue de onde parou, espelhe e envie sua biblioteca</string>
     <string name="settings_storage_external_folder_fallback">Pasta externa</string>
     <string name="settings_backup_status_exporting_title">Exportando banco de dados</string>

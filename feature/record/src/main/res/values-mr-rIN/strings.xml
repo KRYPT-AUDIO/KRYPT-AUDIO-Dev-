@@ -13,7 +13,7 @@
     <string name="record_most_played">सर्वाधिक ऐकलेले: %1$s</string>
     <string name="record_open">तुमचा रेकॉर्ड उघडा</string>
     <string name="record_invite_title">तुमचा रेकॉर्ड तयार करा</string>
-    <string name="record_invite_body">तुम्ही ऐकलेले प्रत्येक वर्ष, एकाच ठिकाणी: Spotify, Last.fm किंवा Stash मधून.</string>
+    <string name="record_invite_body">तुम्ही ऐकलेले प्रत्येक वर्ष, एकाच ठिकाणी: Spotify, Last.fm किंवा KRYPT AUDIO मधून.</string>
     <string name="record_invite_start">सुरू करा</string>
     <string name="record_invite_hide">तुमचा रेकॉर्ड तयार करा लपवा</string>
     <string name="record_close">बंद करा</string>
@@ -45,7 +45,7 @@
     <string name="record_ready_title">तयार करण्यासाठी सज्ज</string>
     <string name="record_ready_body">इंपोर्ट करेपर्यंत काहीही सेव्ह होत नाही.</string>
     <string name="record_ready_review">पाहा</string>
-    <string name="record_import_intro">तुम्ही ऐकलेले प्रत्येक वर्ष, एकाच ठिकाणी. Stash मधील तुमचे प्ले आधीच इथे आहेत: Spotify किंवा Last.fm ने सुरुवात करा, आणि दुसरे हवे तेव्हा जोडा.</string>
+    <string name="record_import_intro">तुम्ही ऐकलेले प्रत्येक वर्ष, एकाच ठिकाणी. KRYPT AUDIO मधील तुमचे प्ले आधीच इथे आहेत: Spotify किंवा Last.fm ने सुरुवात करा, आणि दुसरे हवे तेव्हा जोडा.</string>
     <string name="record_import_ask_title">Spotify कडे तुमचा डेटा मागा</string>
     <string name="record_import_ask_body">Spotify च्या प्रायव्हसी पेजवर दोन्हीवर टिक करा: %1$s (सुमारे 5 दिवस: प्लेलिस्ट, लाइक आणि तुमचे मागील वर्ष) आणि %2$s (30 दिवसांपर्यंत: सर्व काही, तुमच्या पहिल्या गाण्यापासून).</string>
     <string name="record_import_account_data">खाते डेटा</string>
@@ -54,11 +54,11 @@
     <string name="record_import_asked">%1$s रोजी विनंती केली</string>
     <string name="record_import_email_title">Spotify तुम्हाला zip ईमेल करते</string>
     <string name="record_import_email_body">प्रत्येकासाठी एक. आल्यावर लगेच डाउनलोड करा; ती उघडण्याची गरज नाही.</string>
-    <string name="record_import_open_title">zip Stash ने उघडा</string>
-    <string name="record_import_open_body">ईमेल किंवा तुमच्या फाइल्समधून “यासह उघडा” किंवा “शेअर करा” वापरा आणि Stash निवडा. किंवा इथे निवडा.</string>
+    <string name="record_import_open_title">zip KRYPT AUDIO ने उघडा</string>
+    <string name="record_import_open_body">ईमेल किंवा तुमच्या फाइल्समधून “यासह उघडा” किंवा “शेअर करा” वापरा आणि KRYPT AUDIO निवडा. किंवा इथे निवडा.</string>
     <string name="record_import_choose">फाइल्स निवडा</string>
     <string name="record_import_each">प्रत्येक फाइल आल्यावर आणा.</string>
-    <string name="record_import_private">Stash ही फाइल याच फोनवर वाचते. काहीही अपलोड होत नाही.</string>
+    <string name="record_import_private">KRYPT AUDIO ही फाइल याच फोनवर वाचते. काहीही अपलोड होत नाही.</string>
     <string name="record_import_private_lastfm">तुमचे scrobble Last.fm वरून येतात. गाण्यांची लांबी गाण्याच्या नावाने शोधली जाते.</string>
     <string name="record_import_working_title">तुमचा ऐकण्याचा इतिहास आणत आहोत</string>
     <string name="record_import_opening">तुमच्या फाइल्स उघडत आहोत…</string>
@@ -120,7 +120,7 @@
     <string name="record_preview_import">इंपोर्ट करा</string>
     <string name="record_preview_cancel">रद्द करा</string>
     <string name="record_preview_add">आणखी एक फाइल जोडा</string>
-    <string name="record_preview_private">इंपोर्ट करेपर्यंत काहीही सेव्ह होत नाही. Stash ही फाइल याच फोनवर वाचते. काहीही अपलोड होत नाही.</string>
+    <string name="record_preview_private">इंपोर्ट करेपर्यंत काहीही सेव्ह होत नाही. KRYPT AUDIO ही फाइल याच फोनवर वाचते. काहीही अपलोड होत नाही.</string>
     <string name="record_error_nothing_new_title">ही फाइल तुम्ही आधीच आणली आहे</string>
     <string name="record_error_nothing_new_body">यात काहीही नवीन नाही. नवीन प्रत मिळाल्यावर ती आणा.</string>
     <string name="record_error_not_export_title">हे Spotify एक्सपोर्ट नाही</string>
@@ -138,7 +138,7 @@
     <string name="record_error_too_big_title">हे Spotify एक्सपोर्ट असण्यासाठी खूपच मोठे आहे</string>
     <string name="record_error_too_big_body">Spotify चे एक्सपोर्ट यापेक्षा खूप लहान असतात, म्हणून हे वाचले नाही. काहीही जोडले गेले नाही.</string>
     <string name="record_unfinished_title">तुमचे इंपोर्ट पूर्ण झाले नाही</string>
-    <string name="record_unfinished_notice">पुन्हा प्रयत्न करण्यासाठी Stash उघडा: काहीही दोनदा मोजले जाणार नाही.</string>
+    <string name="record_unfinished_notice">पुन्हा प्रयत्न करण्यासाठी KRYPT AUDIO उघडा: काहीही दोनदा मोजले जाणार नाही.</string>
     <string name="record_unfinished_dismiss">बंद करा</string>
     <string name="record_error_choose_another">दुसरी फाइल निवडा</string>
     <string name="record_error_try_again">पुन्हा प्रयत्न करा</string>
@@ -171,12 +171,12 @@
     </plurals>
     <string name="record_lastfm_asking">Last.fm ला विचारत आहोत…</string>
     <string name="record_lastfm_progress">पेज %2$s पैकी %1$s · %3$s</string>
-    <string name="record_lastfm_done">आणले: %1$s. Spotify किंवा Stash कडे आधीच असलेले प्ले एकदाच मोजले.</string>
+    <string name="record_lastfm_done">आणले: %1$s. Spotify किंवा KRYPT AUDIO कडे आधीच असलेले प्ले एकदाच मोजले.</string>
     <string name="record_lastfm_done_none">मागच्या वेळेपासून Last.fm वर काहीही नवीन नाही. सर्व काही अद्ययावत आहे.</string>
-    <string name="record_lastfm_done_part">आणले: %1$s, त्यापैकी %2$s या वेळी. Spotify किंवा Stash कडे आधीच असलेले प्ले एकदाच मोजले.</string>
+    <string name="record_lastfm_done_part">आणले: %1$s, त्यापैकी %2$s या वेळी. Spotify किंवा KRYPT AUDIO कडे आधीच असलेले प्ले एकदाच मोजले.</string>
     <string name="record_lastfm_done_none_yet">Last.fm वर अजून एकही scrobble नाही. आतापासून तुम्ही जे scrobble कराल ते पुढच्या वेळी येईल.</string>
-    <string name="record_lastfm_done_missing">Last.fm ने तुमच्या इतिहासाचा काही भाग पाठवला नाही; Stash पुढच्या वेळी पुन्हा मागेल.</string>
-    <string name="record_lastfm_idle_connect">तुमचे सर्व scrobble, Spotify आणि Stash सोबत तुमच्या रेकॉर्डवर.</string>
+    <string name="record_lastfm_done_missing">Last.fm ने तुमच्या इतिहासाचा काही भाग पाठवला नाही; KRYPT AUDIO पुढच्या वेळी पुन्हा मागेल.</string>
+    <string name="record_lastfm_idle_connect">तुमचे सर्व scrobble, Spotify आणि KRYPT AUDIO सोबत तुमच्या रेकॉर्डवर.</string>
     <string name="record_lastfm_idle_had">%2$s कडून आणले: %1$s. नवीन आणण्यासाठी %2$s म्हणून Last.fm कनेक्ट करा.</string>
     <string name="record_lastfm_idle_bring">%1$s म्हणून केलेले तुमचे सर्व scrobble आणा.</string>
     <string name="record_lastfm_idle_bring_beside">%1$s म्हणून केलेले तुमचे सर्व scrobble आणा. तुमच्या रेकॉर्डमध्ये आधीच असलेले scrobble तसेच राहतील.</string>
@@ -189,8 +189,8 @@
     <string name="record_lastfm_stop">थांबवा</string>
     <string name="record_lastfm_see">तुमचा रेकॉर्ड पाहा</string>
     <string name="record_lastfm_after_spotify">आत्ता सुरू असलेल्या Spotify इंपोर्टनंतर</string>
-    <string name="record_lastfm_hours_note">तुम्ही किती वेळ ऐकले हे Last.fm सांगत नाही, म्हणून Stash प्रत्येक गाण्याची लांबी मोजते, Spotify, तुमची लायब्ररी किंवा स्वतः Last.fm वरून.</string>
-    <string name="record_lastfm_reconnect_title">Last.fm ने Stash ला साइन आउट केले</string>
+    <string name="record_lastfm_hours_note">तुम्ही किती वेळ ऐकले हे Last.fm सांगत नाही, म्हणून KRYPT AUDIO प्रत्येक गाण्याची लांबी मोजते, Spotify, तुमची लायब्ररी किंवा स्वतः Last.fm वरून.</string>
+    <string name="record_lastfm_reconnect_title">Last.fm ने KRYPT AUDIO ला साइन आउट केले</string>
     <string name="record_lastfm_reconnect_body">तेच खाते पुन्हा कनेक्ट करा आणि ते जिथे थांबले तिथूनच पुढे सुरू राहील. दुसरे खाते सुरुवातीपासून सुरू होते, आणि आधीच आलेले scrobble तसेच राहतात.</string>
     <string name="record_lastfm_reconnect">पुन्हा कनेक्ट करा</string>
     <string name="record_lastfm_busy_title">Last.fm व्यस्त आहे</string>
@@ -202,7 +202,7 @@
     <string name="record_lastfm_working_title">तुमचे Last.fm scrobble आणत आहोत</string>
     <string name="record_lastfm_settings_title">Last.fm मधून इंपोर्ट करा</string>
     <string name="record_lastfm_remove">तुमचे Last.fm scrobble काढा</string>
-    <string name="record_lastfm_remove_subtitle">तुमचा Spotify इतिहास आणि Stash मधील तुमचे प्ले राहतील.</string>
+    <string name="record_lastfm_remove_subtitle">तुमचा Spotify इतिहास आणि KRYPT AUDIO मधील तुमचे प्ले राहतील.</string>
     <string name="record_lastfm_remove_title">तुमचे Last.fm scrobble काढायचे?</string>
     <string name="record_lastfm_remove_body">ते या फोनवरील तुमच्या रेकॉर्डमधून निघून जातील. तुमचा Spotify इतिहास आणि तुमचे Last.fm प्रोफाइल जसे आहेत तसेच राहतील.</string>
     <string name="record_lastfm_remove_confirm">काढा</string>
@@ -218,7 +218,7 @@
     <string name="record_intake_busy">एक इंपोर्ट सुरू आहे. ते पूर्ण झाल्यावर ही फाइल आणा.</string>
     <string name="record_import_taste">तुमची आवड समजून घेत आहोत…</string>
     <string name="record_in_mixes_title">मिक्समध्ये तुमचा रेकॉर्ड वापरा</string>
-    <string name="record_in_mixes_subtitle">तुमचे मिक्स, Daily Discover आणि तुमचे Stash Mixes, तुम्हाला वर्षानुवर्षे आवडणाऱ्या कलाकारांवर भर देतात, आणि तुम्ही स्किप करता ती गाणी वगळतात. बंद असताना, ते तुम्ही इथे ऐकता त्यानुसार चालतात.</string>
+    <string name="record_in_mixes_subtitle">तुमचे मिक्स, Daily Discover आणि तुमचे KRYPT AUDIO Mixes, तुम्हाला वर्षानुवर्षे आवडणाऱ्या कलाकारांवर भर देतात, आणि तुम्ही स्किप करता ती गाणी वगळतात. बंद असताना, ते तुम्ही इथे ऐकता त्यानुसार चालतात.</string>
     <string name="record_kept_out_title">तुमच्या मिक्समधून वगळलेली (%1$s)</string>
     <string name="record_kept_out_on">तुम्ही Spotify वर लपवलेली किंवा सतत स्किप करता ती गाणी तुमच्या मिक्सबाहेर राहतात. एखादे परत आणा आणि ते तुमच्या पुढच्या मिक्समध्ये वाजू शकेल.</string>
     <string name="record_kept_out_off">ही तुमच्या रेकॉर्डच्या मिक्सबाहेर राहतात. एखादे परत आणा आणि ते त्यांत पुन्हा वाजू शकेल.</string>
@@ -329,12 +329,12 @@
     <string name="record_mixes_artist_open">%1$s यांची तुम्ही सर्वाधिक वाजवलेली गाणी उघडा</string>
     <string name="record_mixes_artist_play">%1$s यांची तुम्ही सर्वाधिक वाजवलेली गाणी वाजवा</string>
     <string name="record_mixes_top_songs">सर्वाधिक ऐकलेली गाणी</string>
-    <string name="record_mixes_lost">अजून तुमच्या Stash मध्ये नाही</string>
+    <string name="record_mixes_lost">अजून तुमच्या KRYPT AUDIO मध्ये नाही</string>
     <plurals name="record_mixes_lost_line">
         <item quantity="one">%1$d गाणे जे तुम्हाला खूप आवडायचे आणि जे तुम्ही वर्षभरात वाजवले नाही. ते ठेवण्यासाठी पसंत करा.</item>
         <item quantity="other">%1$d गाणी जी तुम्हाला खूप आवडायची आणि जी तुम्ही वर्षभरात वाजवली नाहीत. ठेवण्यासाठी एखादे पसंत करा.</item>
     </plurals>
-    <string name="record_mixes_lost_play">“अजून तुमच्या Stash मध्ये नाही” वाजवा (%1$s)</string>
+    <string name="record_mixes_lost_play">“अजून तुमच्या KRYPT AUDIO मध्ये नाही” वाजवा (%1$s)</string>
     <string name="record_mixes_show_more">आणखी दाखवा</string>
     <string name="record_song_more">%1$s साठी आणखी पर्याय</string>
     <string name="record_song_like">पसंत करा</string>

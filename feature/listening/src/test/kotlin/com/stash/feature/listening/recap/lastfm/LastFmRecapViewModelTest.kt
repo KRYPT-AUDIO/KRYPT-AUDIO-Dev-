@@ -100,7 +100,7 @@ class LastFmRecapViewModelTest {
         val s = vm.state.value as RecapUiState.Ready
         assertThat(s.voice.source).isEqualTo(RecapSource.LASTFM)
         assertThat(s.title).isEqualTo("Your September on Last.fm")
-        assertThat(s.footer).isEqualTo("Stash · Last.fm · September 2026")
+        assertThat(s.footer).isEqualTo("KRYPT AUDIO · Last.fm · September 2026")
         assertThat(s.voice.introLead).isEqualTo("You scrobbled")
         assertThat(s.voice.credit).isEqualTo("Scrobbles from Last.fm")
         assertThat(s.voice.endActions).isFalse()

@@ -39,7 +39,7 @@ data class RecapVoice(val source: RecapSource) {
     val credit: String? get() = if (lastFm) LastFmRecapVoice.CREDIT else null
 
     /** The share images' footer. */
-    fun footer(longName: String): String = if (lastFm) "Stash · Last.fm · $longName" else "Stash · $longName"
+    fun footer(longName: String): String = if (lastFm) "KRYPT AUDIO · Last.fm · $longName" else "KRYPT AUDIO · $longName"
 
     /** The share image's file-name prefix. */
     val filePrefix: String get() = if (lastFm) "stash lastfm" else "stash"
@@ -77,7 +77,7 @@ internal object LastFmRecapVoice {
 
     fun failure(reason: LastFmRecapException.Reason?): String = when (reason) {
         LastFmRecapException.Reason.PRIVATE ->
-            "This Last.fm profile keeps its listening private, so Stash can't read it. You can change that in Last.fm's privacy settings."
+            "This Last.fm profile keeps its listening private, so KRYPT AUDIO can't read it. You can change that in Last.fm's privacy settings."
         LastFmRecapException.Reason.NOT_FOUND -> "Last.fm doesn't know this profile any more."
         LastFmRecapException.Reason.OFFLINE -> "Couldn't reach Last.fm. Check your connection and try again."
         LastFmRecapException.Reason.BUSY -> "Last.fm is busy right now. Try again in a minute."

@@ -319,7 +319,7 @@ class AppUpdater internal constructor(
         return false
     }
 
-    /** "Stash 0.9.123 is ready to install", in place of the update's notification; a tap opens the sheet. */
+    /** "KRYPT AUDIO 0.9.123 is ready to install", in place of the update's notification; a tap opens the sheet. */
     private fun notifyReadyToInstall(update: AvailableUpdate) {
         val manager = NotificationManagerCompat.from(context)
         if (!manager.areNotificationsEnabled()) return

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Settings › Library & Storage: "Export for Stash on the web" (the web player's library file). -->
-    <string name="web_library_export_title">Веб-версия Stash</string>
-    <string name="web_library_export_button">Экспорт в веб-версию Stash</string>
+    <string name="web_library_export_title">Веб-версия KRYPT AUDIO</string>
+    <string name="web_library_export_button">Экспорт в веб-версию KRYPT AUDIO</string>
     <string name="web_library_export_working_title">Экспортируем вашу медиатеку</string>
     <!-- %1$s likes, %2$s playlists, %3$s plays: the three counts below. -->
     <string name="web_library_export_failed_body">Не удалось записать файл. Попробуйте снова или выберите другое место для сохранения.</string>
-    <string name="web_library_import_button">Импортировать из веб-версии Stash</string>
+    <string name="web_library_import_button">Импортировать из веб-версии KRYPT AUDIO</string>
     <!-- %1$s: the browser's name ("Chrome on Windows"). -->
     <!-- %1$s the browser, %2$s likes, %3$s playlists, %4$s plays. -->
     <!-- Settings > About -->
@@ -14,7 +14,7 @@
     <string name="settings_share_latest_crash">Отправить последний отчёт об ошибке</string>
     <string name="settings_no_recent_crashes">Нет недавних сбоев.</string>
     <string name="settings_no_crash_report_toast">Нет отчётов для отправки.</string>
-    <string name="settings_crash_report_subject">Отчёт об ошибке Stash</string>
+    <string name="settings_crash_report_subject">Отчёт об ошибке KRYPT AUDIO</string>
     <string name="settings_share_crash_report_chooser">Отправить отчёт об ошибке</string>
     <string name="settings_no_app_share_report_toast">Нет доступных приложений для отправки отчёта.</string>
     <string name="settings_share_diagnostics_bundle">Отправить диагностику</string>
@@ -31,12 +31,12 @@
     <string name="settings_accounts_sync_title">Аккаунты &amp; синхронизация</string>
     <string name="settings_library_storage_title">Библиотека &amp; хранилище</string>
     <!-- Settings > Support Banner -->
-    <string name="settings_support_subtitle">Stash полностью бесплатен и создан волонтёрами. Если проект оказался вам полезен, пожалуйста, поддержите его.</string>
+    <string name="settings_support_subtitle">KRYPT AUDIO полностью бесплатен и создан волонтёрами. Если проект оказался вам полезен, пожалуйста, поддержите его.</string>
     <!-- Settings > Accounts & Sync -->
     <string name="settings_cancel">Отменить</string>
     <string name="settings_disable">Выключить</string>
     <string name="settings_discord_risk_title">Прежде, чем вы привяжете Discord</string>
-    <string name="settings_discord_risk_body">У Discord нет официального способа, с помощью которого мобильное приложение могло бы менять ваш статус, поэтому Stash входит в ваш аккаунт и использует собственную сессию. Правила Discord называют это \"self-bot\" и разрешают применять к такому аккаунту меры.\n\nМеры обычно направлены против спама, а не против обновления статуса, так что это маловероятно — но аккаунт ваш, и решать вам.\n\nПри отвязке статус очищается, а токен удаляется с этого устройства.</string>
+    <string name="settings_discord_risk_body">У Discord нет официального способа, с помощью которого мобильное приложение могло бы менять ваш статус, поэтому KRYPT AUDIO входит в ваш аккаунт и использует собственную сессию. Правила Discord называют это \"self-bot\" и разрешают применять к такому аккаунту меры.\n\nМеры обычно направлены против спама, а не против обновления статуса, так что это маловероятно — но аккаунт ваш, и решать вам.\n\nПри отвязке статус очищается, а токен удаляется с этого устройства.</string>
     <string name="settings_discord_risk_connect">Привязать</string>
     <string name="settings_discord_finish_connecting">Завершить привязку</string>
     <!-- Settings > Accounts > Discord Login & Token -->
@@ -49,7 +49,7 @@
     <string name="settings_account_connect">Привязать</string>
     <!-- Settings > Accounts > DisconnectAccountDialog -->
     <string name="settings_disconnect_account_title">Отвязать %1$s?</string>
-    <string name="settings_disconnect_account_body">Stash выйдет из %1$s на данном устройстве и перестанет его синхронизировать. Треки из %1$s ожидающие загрузки будут удалены из очереди.
+    <string name="settings_disconnect_account_body">KRYPT AUDIO выйдет из %1$s на данном устройстве и перестанет его синхронизировать. Треки из %1$s ожидающие загрузки будут удалены из очереди.
 \n\nТреки, которые вы уже загрузили, остаются в вашей медиатеке.
 </string>
     <!-- Settings > Accounts > LikeMirrorWarningDialog -->
@@ -109,7 +109,7 @@
     <string name="settings_lyrics_apple_music">Apple Music</string>
     <!-- Settings > Library & Storage -->
     <string name="settings_library_section">Медиатека</string>
-    <string name="settings_stash_mixes_title">Миксы Stash (бета)</string>
+    <string name="settings_stash_mixes_title">Миксы KRYPT AUDIO (бета)</string>
     <string name="settings_library_health_title">Состояние библиотеки</string>
     <string name="settings_listening_history_title">История прослушиваний</string>
     <string name="settings_backup_status_exporting_title">Экспортируем базу данных</string>

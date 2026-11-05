@@ -1,7 +1,7 @@
 ---
 /**
  * Frequently asked questions, from the README (Install, Requirements, Lossless,
- * Privacy, "Why Stash isn't on the Play Store", "When background sync stops
+ * Privacy, "Why KRYPT AUDIO isn't on the Play Store", "When background sync stops
  * working") and checked against the app's code; keep them in step.
  *
  * The free, Play Store, lossless and requirements answers were corrected
@@ -33,24 +33,24 @@ import { LINKS } from '../../data/site';
 
     <div class="list">
       <details>
-        <summary>Is Stash free?<Icon name="chevron-down" class="chevron" /></summary>
+        <summary>Is KRYPT AUDIO free?<Icon name="chevron-down" class="chevron" /></summary>
         <div class="answer" id="faq-free">
           <p>
-            Yes. Stash is free and open source under the
-            <a href={LINKS.license}>GNU General Public License, version 3</a> or later. There's no Stash account to
+            Yes. KRYPT AUDIO is free and open source under the
+            <a href={LINKS.license}>GNU General Public License, version 3</a> or later. There's no KRYPT AUDIO account to
             make, but to sync a library you need your own Spotify and/or YouTube Music account.
           </p>
-          <p>If you'd like to help keep Stash going, you can <a href="#community">support the project</a>.</p>
+          <p>If you'd like to help keep KRYPT AUDIO going, you can <a href="#community">support the project</a>.</p>
         </div>
       </details>
 
       <details>
-        <summary>Why isn't Stash on the Play Store?<Icon name="chevron-down" class="chevron" /></summary>
+        <summary>Why isn't KRYPT AUDIO on the Play Store?<Icon name="chevron-down" class="chevron" /></summary>
         <div class="answer" id="faq-play-store">
-          <p>Google Play doesn't allow apps that save audio from YouTube, so Stash is published on GitHub instead.</p>
+          <p>Google Play doesn't allow apps that save audio from YouTube, so KRYPT AUDIO is published on GitHub instead.</p>
           <p>
-            Stash never downloads audio from Spotify. It reads your Spotify library with your own login and finds
-            each song's audio elsewhere, as the <a href="/privacy#what-stash-talks-to">privacy page</a> lists. Stash
+            KRYPT AUDIO never downloads audio from Spotify. It reads your Spotify library with your own login and finds
+            each song's audio elsewhere, as the <a href="/privacy#what-stash-talks-to">privacy page</a> lists. KRYPT AUDIO
             isn't affiliated with or endorsed by any of the services it connects to, and you're responsible for how
             you use it.
           </p>
@@ -67,7 +67,7 @@ import { LINKS } from '../../data/site';
             Then tap Install.
           </p>
           <p>
-            Stash checks GitHub for new releases and lets you know when one is out. To get updates through
+            KRYPT AUDIO checks GitHub for new releases and lets you know when one is out. To get updates through
             <a href={LINKS.obtainium}>Obtainium</a>, add <code>https://github.com/rawnaldclark/Stash</code> to it.
           </p>
         </div>
@@ -80,11 +80,11 @@ import { LINKS } from '../../data/site';
           <ul>
             <li>
               <strong>Your own Qobuz account</strong>, connected in Settings › Audio &amp; Quality. Your email
-              and password are sent once to Qobuz to mint a token; Stash keeps the token, not the password.
+              and password are sent once to Qobuz to mint a token; KRYPT AUDIO keeps the token, not the password.
             </li>
             <li><strong>Your own relay endpoint</strong>, if you run one, set under Advanced on the same screen.</li>
             <li>
-              <strong>Stash's relay</strong>, in official release builds only, when nothing of your own is connected
+              <strong>KRYPT AUDIO's relay</strong>, in official release builds only, when nothing of your own is connected
               or working. The <a href="/privacy#lossless-and-fallback-audio">privacy page</a> says what it's sent.
             </li>
           </ul>
@@ -100,14 +100,14 @@ import { LINKS } from '../../data/site';
         <summary>Is my data safe?<Icon name="chevron-down" class="chevron" /></summary>
         <div class="answer" id="faq-privacy">
           <p>
-            Stash has no account server, no analytics and no third-party crash reporters. Your credentials live on
+            KRYPT AUDIO has no account server, no analytics and no third-party crash reporters. Your credentials live on
             your phone, with the Spotify, YouTube and Discord tokens encrypted (AES-256-GCM, via Google's
             <a href={LINKS.tink}>Tink</a>), and each one is only ever sent back to the service it came from. No
             host the project runs ever sees one.
           </p>
           <p>
             Lyrics, scrobbling, artist info and the audio itself come from hosts of their own. The
-            <a href="/privacy">privacy page</a> lists everything Stash can reach, and what each one is sent. Found
+            <a href="/privacy">privacy page</a> lists everything KRYPT AUDIO can reach, and what each one is sent. Found
             a security issue? Please <a href={LINKS.security}>report it privately</a>.
           </p>
         </div>
@@ -130,7 +130,7 @@ import { LINKS } from '../../data/site';
           <p>
             Some phones, especially from Samsung, Xiaomi, OnePlus and Huawei, close background apps aggressively
             to save battery. If a sync fails partway with a foreground-service error, open your phone's Settings ›
-            Apps › Stash › Battery and set it to Unrestricted. You only need to do this once.
+            Apps › KRYPT AUDIO › Battery and set it to Unrestricted. You only need to do this once.
           </p>
           <p>
             If that's not enough on your phone, <a href={LINKS.dontKillMyApp}>dontkillmyapp.com</a> has steps for

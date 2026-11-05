@@ -63,7 +63,7 @@ class SharedMixViewModelTest {
         assertThat((missing.state.value as SharedMixUiState.Error).message).isEqualTo("This link doesn't point to a mix.")
         coEvery { repo.fetch(any()) } returns ShareResult.Ok(doc.copy(v = 2))
         val newer = vm(); advanceUntilIdle()
-        assertThat((newer.state.value as SharedMixUiState.Error).message).isEqualTo("Update Stash to open this mix.")
+        assertThat((newer.state.value as SharedMixUiState.Error).message).isEqualTo("Update KRYPT AUDIO to open this mix.")
         coEvery { repo.fetch(any()) } returns ShareResult.Failed("io")
         val offline = vm(); advanceUntilIdle()
         assertThat((offline.state.value as SharedMixUiState.Error).retryable).isTrue()

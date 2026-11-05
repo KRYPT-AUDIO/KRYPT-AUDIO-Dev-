@@ -5,7 +5,7 @@
  */
 
 export const SITE = {
-  name: 'Stash',
+  name: 'KRYPT AUDIO',
   url: 'https://stashfm.app',
   /** The README's tagline. */
   tagline: 'Your music, your way.',
@@ -15,13 +15,13 @@ export const SITE = {
    * pitch to replace those services' paid plans.
    */
   description:
-    'Stash mirrors your Spotify and YouTube Music libraries to your Android phone, to play offline or stream, and now plays in your browser too, in early access. Free and open source, with no analytics.',
+    'KRYPT AUDIO mirrors your Spotify and YouTube Music libraries to your Android phone, to play offline or stream, and now plays in your browser too, in early access. Free and open source, with no analytics.',
   /** README › Requirements. */
   minAndroid: 'Android 8.0+',
   /** The social card every page uses: public/social-preview.jpg (1200 × 630). */
   socialImage: '/social-preview.jpg',
   socialImageAlt:
-    'Stash on three phones: Home with Daily Discover, Now Playing, and word-synced lyrics',
+    'KRYPT AUDIO on three phones: Home with Daily Discover, Now Playing, and word-synced lyrics',
 } as const;
 
 const REPO = 'https://github.com/rawnaldclark/Stash';

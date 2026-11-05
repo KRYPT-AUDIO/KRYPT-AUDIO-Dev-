@@ -16,7 +16,7 @@ class ShareImageTest {
     private val now = 1_792_368_725_000L
 
     @Test fun `names are lower case words joined by hyphens, with the time`() {
-        assertThat(ShareImage.fileName("Stash · Your October 2026 — Top songs!", now, ZoneOffset.UTC))
+        assertThat(ShareImage.fileName("KRYPT AUDIO · Your October 2026 — Top songs!", now, ZoneOffset.UTC))
             .isEqualTo("stash-your-october-2026-top-songs-20261019-001205.png")
         assertThat(ShareImage.fileName("  ", now, ZoneOffset.UTC)).isEqualTo("stash-20261019-001205.png")
         assertThat(ShareImage.fileName("Ünïcode ✨", now, ZoneOffset.UTC)).isEqualTo("n-code-20261019-001205.png")

@@ -39,7 +39,7 @@ data class PublishedState(val device: String, val deviceName: String, val server
 
 /**
  * What `GET …/slots/now` held: the states this phone could open, its own slot's stamp ([ownServerAt]; the reader's "own last
- * playback" in server time), and [updateNeeded] when a newer format arrived ("Update Stash to keep syncing").
+ * playback" in server time), and [updateNeeded] when a newer format arrived ("Update KRYPT AUDIO to keep syncing").
  */
 data class NowRead(
     val me: String,
@@ -223,7 +223,7 @@ class HandoffSync @Inject constructor(
         const val TAG = "WebLinkHandoff"
         const val SLOT_NOW = "now"
         const val SLOT_QUEUE = "queue"
-        const val DEFAULT_NAME = "Stash on the web"
+        const val DEFAULT_NAME = "KRYPT AUDIO on the web"
 
         /** A `now` is under 2 KiB of JSON; a queue of 2,000 songs well under 4 MiB. */
         const val MAX_NOW_PLAIN = 64 * 1024

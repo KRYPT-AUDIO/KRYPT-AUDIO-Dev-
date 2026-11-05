@@ -114,7 +114,7 @@ class DiscordRpcCoordinator @Inject constructor(
         active.requestActivity(
             DiscordActivity(
                 applicationId = DiscordRpcConfig.CLIENT_ID,
-                name = "Stash",
+                name = "KRYPT AUDIO",
                 platform = "android",
                 type = DiscordActivityType.Listening.value,
                 details = title,

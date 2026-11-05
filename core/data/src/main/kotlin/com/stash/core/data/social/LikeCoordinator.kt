@@ -336,7 +336,7 @@ class LikeCoordinator internal constructor(
 /** The service's own name, for messages (a brand name: never translated). */
 val Destination.serviceName: String
     get() = when (this) {
-        Destination.STASH -> "Stash"
+        Destination.STASH -> "KRYPT AUDIO"
         Destination.SPOTIFY -> "Spotify"
         Destination.YT_MUSIC -> "YouTube Music"
         Destination.LAST_FM -> "Last.fm"

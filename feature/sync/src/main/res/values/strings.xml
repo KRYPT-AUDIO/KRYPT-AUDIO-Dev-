@@ -87,7 +87,7 @@
 
     <!-- Refresh Mode Dialog & Chips -->
     <string name="sync_switch_to_refresh_title">Switch to Refresh?</string>
-    <string name="sync_switch_to_refresh_body">Refresh mirrors your playlists and Liked songs: a song removed on the service is removed here too. Its download is deleted once every account is set to Refresh; while any account keeps songs, nothing is deleted. Songs you added in Stash are kept. Mixes follow their own Stack setting.</string>
+    <string name="sync_switch_to_refresh_body">Refresh mirrors your playlists and Liked songs: a song removed on the service is removed here too. Its download is deleted once every account is set to Refresh; while any account keeps songs, nothing is deleted. Songs you added in KRYPT AUDIO are kept. Mixes follow their own Stack setting.</string>
     <string name="sync_switch_to_refresh_confirm">Switch to Refresh</string>
     <string name="sync_mix_mode_title">When a song leaves a playlist</string>
     <string name="sync_mode_refresh">Refresh</string>

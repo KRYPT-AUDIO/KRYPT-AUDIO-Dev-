@@ -162,7 +162,7 @@ class LikeDestinationDispatcher internal constructor(
 
     private suspend fun fireUnlikeDestination(track: Track, dest: Destination): Result<Unit> {
         if (!alreadySaved(track, dest)) {
-            Log.d(TAG, "skip unlike $dest for track ${track.id} — never saved by Stash")
+            Log.d(TAG, "skip unlike $dest for track ${track.id} — never saved by KRYPT AUDIO")
             return Result.success(Unit)
         }
         if (dest != Destination.STASH) {
@@ -288,7 +288,7 @@ class LikeDestinationDispatcher internal constructor(
         val stamp = stampOf(track, dest)
         val epoch = ownership.epoch()
         when {
-            stamp == null -> "never saved by Stash"
+            stamp == null -> "never saved by KRYPT AUDIO"
             epoch == null || stamp < epoch -> "stamped by a build that never asked the service first"
             ownership.isLikedByService(dest, track.id) -> "the like there is the listener's own"
             else -> null

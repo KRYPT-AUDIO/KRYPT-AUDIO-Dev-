@@ -1,8 +1,8 @@
-# Contributing to Stash
+# Contributing to KRYPT AUDIO
 
-Thanks for your interest in improving Stash. This guide covers how to build the app, how the codebase is laid out, and how to get a change merged.
+Thanks for your interest in improving KRYPT AUDIO. This guide covers how to build the app, how the codebase is laid out, and how to get a change merged.
 
-Stash is GPL-3.0. By contributing, you agree that your contributions are licensed under the same terms.
+KRYPT AUDIO is GPL-3.0. By contributing, you agree that your contributions are licensed under the same terms.
 
 ---
 
@@ -46,7 +46,7 @@ Run the unit tests:
 ./gradlew test
 ```
 
-> **Note:** Stash talks to third-party music services using your own login cookies (see the [README](README.md) for how that works). You don't need any of that configured to build the app or work on most of the codebase — only to exercise the sync/streaming paths end to end on a device.
+> **Note:** KRYPT AUDIO talks to third-party music services using your own login cookies (see the [README](README.md) for how that works). You don't need any of that configured to build the app or work on most of the codebase — only to exercise the sync/streaming paths end to end on a device.
 
 ---
 
@@ -81,7 +81,7 @@ with the new key. Uninstalling wipes app data, so do this first:
 
 ## How the codebase is organized
 
-Stash is a multi-module Gradle project. Modules keep responsibilities isolated so a change in one place doesn't ripple everywhere. From the top:
+KRYPT AUDIO is a multi-module Gradle project. Modules keep responsibilities isolated so a change in one place doesn't ripple everywhere. From the top:
 
 ### `:app`
 The application shell — dependency-injection wiring (Hilt), top-level navigation, and the `Application` class. Thin by design; the real work lives in the modules below.

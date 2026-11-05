@@ -1,5 +1,5 @@
 <!--
-Thanks for contributing to Stash! Please fill this out so review goes quickly.
+Thanks for contributing to KRYPT AUDIO! Please fill this out so review goes quickly.
 For anything substantial, please open an issue first so we can agree on the approach before you sink time into a PR.
 -->
 

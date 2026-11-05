@@ -62,7 +62,7 @@ class SharedMixViewModel @Inject constructor(
         viewModelScope.launch {
             _state.value = try {
                 when (val r = repository.fetch(shareId)) {
-                    is ShareResult.Ok -> if (r.value.v > 1) SharedMixUiState.Error("Update Stash to open this mix.", false) else {
+                    is ShareResult.Ok -> if (r.value.v > 1) SharedMixUiState.Error("Update KRYPT AUDIO to open this mix.", false) else {
                         SharedMixUiState.Loaded(doc = r.value, followedPlaylistId = null, isOwnMix = false)
                             .withRow(repository.byShareId(shareId))
                     }

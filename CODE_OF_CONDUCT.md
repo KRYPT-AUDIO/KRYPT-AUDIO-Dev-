@@ -60,7 +60,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement on the
-[Stash Discord](https://discord.gg/vcbjEby5PC) or by email at
+[KRYPT AUDIO Discord](https://discord.gg/vcbjEby5PC) or by email at
 **rawnaldclark@gmail.com**.
 All complaints will be reviewed and investigated promptly and fairly.
 

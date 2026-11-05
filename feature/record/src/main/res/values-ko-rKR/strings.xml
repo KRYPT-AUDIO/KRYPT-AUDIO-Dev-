@@ -11,7 +11,7 @@
     <string name="record_most_played">가장 많이 들은 아티스트: %1$s</string>
     <string name="record_open">나의 레코드 열기</string>
     <string name="record_invite_title">나의 레코드 만들기</string>
-    <string name="record_invite_body">들어 온 모든 해를 한곳에: Spotify, Last.fm 또는 Stash에서.</string>
+    <string name="record_invite_body">들어 온 모든 해를 한곳에: Spotify, Last.fm 또는 KRYPT AUDIO에서.</string>
     <string name="record_invite_start">시작하기</string>
     <string name="record_invite_hide">나의 레코드 만들기 숨기기</string>
     <string name="record_close">닫기</string>
@@ -42,7 +42,7 @@
     <string name="record_ready_title">만들 준비 완료</string>
     <string name="record_ready_body">가져오기 전에는 아무것도 저장되지 않습니다.</string>
     <string name="record_ready_review">검토</string>
-    <string name="record_import_intro">들어 온 모든 해를 한곳에. Stash의 재생 기록은 이미 여기 있습니다. Spotify나 Last.fm으로 시작하고, 나머지는 원할 때 추가하세요.</string>
+    <string name="record_import_intro">들어 온 모든 해를 한곳에. KRYPT AUDIO의 재생 기록은 이미 여기 있습니다. Spotify나 Last.fm으로 시작하고, 나머지는 원할 때 추가하세요.</string>
     <string name="record_import_ask_title">Spotify에 데이터 요청하기</string>
     <string name="record_import_ask_body">Spotify 개인정보 보호 페이지에서 둘 다 선택하세요: %1$s(약 5일: 플레이리스트, 좋아요, 최근 1년) 및 %2$s(최대 30일: 첫 곡부터 전부).</string>
     <string name="record_import_account_data">계정 데이터</string>
@@ -51,11 +51,11 @@
     <string name="record_import_asked">%1$s에 요청함</string>
     <string name="record_import_email_title">Spotify에서 zip 파일을 이메일로 보냅니다</string>
     <string name="record_import_email_body">요청마다 하나씩 옵니다. 도착하는 대로 다운로드하세요. 열 필요는 없습니다.</string>
-    <string name="record_import_open_title">Stash로 zip 파일 열기</string>
-    <string name="record_import_open_body">이메일이나 파일 앱에서 ‘다음으로 열기’ 또는 ‘공유’를 사용해 Stash를 선택하세요. 여기에서 선택할 수도 있습니다.</string>
+    <string name="record_import_open_title">KRYPT AUDIO로 zip 파일 열기</string>
+    <string name="record_import_open_body">이메일이나 파일 앱에서 ‘다음으로 열기’ 또는 ‘공유’를 사용해 KRYPT AUDIO를 선택하세요. 여기에서 선택할 수도 있습니다.</string>
     <string name="record_import_choose">파일 선택</string>
     <string name="record_import_each">도착하는 대로 하나씩 가져오세요.</string>
-    <string name="record_import_private">Stash는 이 휴대전화에서 파일을 읽습니다. 아무것도 업로드되지 않습니다.</string>
+    <string name="record_import_private">KRYPT AUDIO는 이 휴대전화에서 파일을 읽습니다. 아무것도 업로드되지 않습니다.</string>
     <string name="record_import_private_lastfm">스크로블 기록은 Last.fm에서 가져옵니다. 곡 길이는 곡 이름으로 찾습니다.</string>
     <string name="record_import_working_title">청취 기록을 가져오는 중</string>
     <string name="record_import_opening">파일을 여는 중…</string>
@@ -108,7 +108,7 @@
     <string name="record_preview_import">가져오기</string>
     <string name="record_preview_cancel">취소</string>
     <string name="record_preview_add">다른 파일 추가</string>
-    <string name="record_preview_private">가져오기 전에는 아무것도 저장되지 않습니다. Stash는 이 휴대전화에서 파일을 읽습니다. 아무것도 업로드되지 않습니다.</string>
+    <string name="record_preview_private">가져오기 전에는 아무것도 저장되지 않습니다. KRYPT AUDIO는 이 휴대전화에서 파일을 읽습니다. 아무것도 업로드되지 않습니다.</string>
     <string name="record_error_nothing_new_title">이미 가져온 파일입니다</string>
     <string name="record_error_nothing_new_body">새로운 내용이 없습니다. 더 최신 사본이 생기면 그것을 가져오세요.</string>
     <string name="record_error_not_export_title">Spotify 내보내기 파일이 아닙니다</string>
@@ -126,7 +126,7 @@
     <string name="record_error_too_big_title">Spotify 내보내기 파일이라기엔 너무 큽니다</string>
     <string name="record_error_too_big_body">Spotify 내보내기 파일은 훨씬 작기 때문에 읽지 않았습니다. 추가된 것은 없습니다.</string>
     <string name="record_unfinished_title">가져오기를 마치지 못했습니다</string>
-    <string name="record_unfinished_notice">Stash를 열어 다시 시도하세요. 중복으로 집계되는 것은 없습니다.</string>
+    <string name="record_unfinished_notice">KRYPT AUDIO를 열어 다시 시도하세요. 중복으로 집계되는 것은 없습니다.</string>
     <string name="record_unfinished_dismiss">닫기</string>
     <string name="record_error_choose_another">다른 파일 선택</string>
     <string name="record_error_try_again">다시 시도</string>
@@ -155,12 +155,12 @@
     </plurals>
     <string name="record_lastfm_asking">Last.fm에 요청하는 중…</string>
     <string name="record_lastfm_progress">%2$s페이지 중 %1$s페이지 · %3$s</string>
-    <string name="record_lastfm_done">%1$s를 가져왔습니다. Spotify나 Stash에 이미 있던 재생 기록은 한 번만 집계했습니다.</string>
+    <string name="record_lastfm_done">%1$s를 가져왔습니다. Spotify나 KRYPT AUDIO에 이미 있던 재생 기록은 한 번만 집계했습니다.</string>
     <string name="record_lastfm_done_none">지난번 이후 Last.fm에 새 기록이 없습니다. 최신 상태입니다.</string>
-    <string name="record_lastfm_done_part">%1$s를 가져왔습니다(이번에 %2$s개). Spotify나 Stash에 이미 있던 재생 기록은 한 번만 집계했습니다.</string>
+    <string name="record_lastfm_done_part">%1$s를 가져왔습니다(이번에 %2$s개). Spotify나 KRYPT AUDIO에 이미 있던 재생 기록은 한 번만 집계했습니다.</string>
     <string name="record_lastfm_done_none_yet">아직 Last.fm에 스크로블 기록이 없습니다. 지금부터 스크로블링하는 기록은 다음에 가져옵니다.</string>
-    <string name="record_lastfm_done_missing">Last.fm이 기록의 일부를 보내지 않았습니다. 다음에 Stash가 다시 요청합니다.</string>
-    <string name="record_lastfm_idle_connect">스크로블링한 모든 기록이 Spotify, Stash와 함께 나의 레코드에 쌓입니다.</string>
+    <string name="record_lastfm_done_missing">Last.fm이 기록의 일부를 보내지 않았습니다. 다음에 KRYPT AUDIO가 다시 요청합니다.</string>
+    <string name="record_lastfm_idle_connect">스크로블링한 모든 기록이 Spotify, KRYPT AUDIO와 함께 나의 레코드에 쌓입니다.</string>
     <string name="record_lastfm_idle_had">%2$s 계정에서 %1$s를 가져왔습니다. 새 기록을 가져오려면 %2$s 계정으로 Last.fm을 연결하세요.</string>
     <string name="record_lastfm_idle_bring">%1$s 계정으로 스크로블링한 모든 기록을 가져오세요.</string>
     <string name="record_lastfm_idle_bring_beside">%1$s 계정으로 스크로블링한 모든 기록을 가져오세요. 이미 나의 레코드에 있는 스크로블은 그대로 남습니다.</string>
@@ -173,8 +173,8 @@
     <string name="record_lastfm_stop">중지</string>
     <string name="record_lastfm_see">나의 레코드 보기</string>
     <string name="record_lastfm_after_spotify">진행 중인 Spotify 가져오기가 끝난 후</string>
-    <string name="record_lastfm_hours_note">Last.fm은 들은 시간을 알려 주지 않아서, Stash는 Spotify, 내 라이브러리 또는 Last.fm에서 확인한 각 곡의 길이로 계산합니다.</string>
-    <string name="record_lastfm_reconnect_title">Last.fm에서 Stash가 로그아웃되었습니다</string>
+    <string name="record_lastfm_hours_note">Last.fm은 들은 시간을 알려 주지 않아서, KRYPT AUDIO는 Spotify, 내 라이브러리 또는 Last.fm에서 확인한 각 곡의 길이로 계산합니다.</string>
+    <string name="record_lastfm_reconnect_title">Last.fm에서 KRYPT AUDIO가 로그아웃되었습니다</string>
     <string name="record_lastfm_reconnect_body">같은 계정을 다시 연결하면 멈춘 곳부터 이어서 진행됩니다. 다른 계정은 처음부터 시작하며, 이미 가져온 스크로블은 그대로 남습니다.</string>
     <string name="record_lastfm_reconnect">다시 연결</string>
     <string name="record_lastfm_busy_title">Last.fm이 혼잡합니다</string>
@@ -186,7 +186,7 @@
     <string name="record_lastfm_working_title">Last.fm 스크로블을 가져오는 중</string>
     <string name="record_lastfm_settings_title">Last.fm에서 가져오기</string>
     <string name="record_lastfm_remove">Last.fm 스크로블 삭제</string>
-    <string name="record_lastfm_remove_subtitle">Spotify 기록과 Stash의 재생 기록은 그대로 유지됩니다.</string>
+    <string name="record_lastfm_remove_subtitle">Spotify 기록과 KRYPT AUDIO의 재생 기록은 그대로 유지됩니다.</string>
     <string name="record_lastfm_remove_title">Last.fm 스크로블을 삭제할까요?</string>
     <string name="record_lastfm_remove_body">이 휴대전화의 나의 레코드에서 삭제됩니다. Spotify 기록과 Last.fm 프로필은 그대로 유지됩니다.</string>
     <string name="record_lastfm_remove_confirm">삭제</string>
@@ -202,7 +202,7 @@
     <string name="record_intake_busy">가져오기가 진행 중입니다. 완료된 후 가져오세요.</string>
     <string name="record_import_taste">취향을 분석하는 중…</string>
     <string name="record_in_mixes_title">믹스에 나의 레코드 사용</string>
-    <string name="record_in_mixes_subtitle">Daily Discover와 Stash Mix 등 나의 믹스가 오랫동안 좋아해 온 아티스트를 중심으로 구성되고, 건너뛰는 곡은 빠집니다. 끄면 여기서 듣는 음악을 기준으로 만들어집니다.</string>
+    <string name="record_in_mixes_subtitle">Daily Discover와 KRYPT AUDIO Mix 등 나의 믹스가 오랫동안 좋아해 온 아티스트를 중심으로 구성되고, 건너뛰는 곡은 빠집니다. 끄면 여기서 듣는 음악을 기준으로 만들어집니다.</string>
     <string name="record_kept_out_title">믹스에서 제외됨 (%1$s)</string>
     <string name="record_kept_out_on">Spotify에서 숨겼거나 계속 건너뛰는 곡은 믹스에서 제외됩니다. 다시 넣으면 다음 믹스부터 재생될 수 있습니다.</string>
     <string name="record_kept_out_off">이 곡들은 나의 레코드 믹스에서 제외됩니다. 다시 넣으면 그 믹스에서 다시 재생될 수 있습니다.</string>
@@ -305,11 +305,11 @@
     <string name="record_mixes_artist_open">%1$s의 가장 많이 들은 곡 열기</string>
     <string name="record_mixes_artist_play">%1$s의 가장 많이 들은 곡 재생</string>
     <string name="record_mixes_top_songs">많이 들은 곡</string>
-    <string name="record_mixes_lost">아직 Stash에 없는 곡</string>
+    <string name="record_mixes_lost">아직 KRYPT AUDIO에 없는 곡</string>
     <plurals name="record_mixes_lost_line">
         <item quantity="other">좋아했지만 1년 동안 듣지 않은 곡 %1$d곡. 좋아요를 눌러 간직하세요.</item>
     </plurals>
-    <string name="record_mixes_lost_play">‘아직 Stash에 없는 곡’ 재생(%1$s)</string>
+    <string name="record_mixes_lost_play">‘아직 KRYPT AUDIO에 없는 곡’ 재생(%1$s)</string>
     <string name="record_mixes_show_more">더 보기</string>
     <string name="record_song_more">%1$s 옵션 더보기</string>
     <string name="record_song_like">좋아요</string>

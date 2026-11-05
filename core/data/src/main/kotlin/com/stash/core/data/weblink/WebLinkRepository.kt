@@ -359,7 +359,7 @@ class WebLinkRepository @Inject constructor(
 
     /** Deletes the local link state after a `401 revoked` (or a lost key): the library stays as it is. */
     internal suspend fun unlinked(selfRemove: Boolean = false): WebLinkResult {
-        val first = store.roster().firstOrNull { it.type == TYPE_WEB }?.displayName ?: "Stash on the web"
+        val first = store.roster().firstOrNull { it.type == TYPE_WEB }?.displayName ?: "KRYPT AUDIO on the web"
         if (selfRemove) {
             val id = store.identity()
             val sp = store.space()

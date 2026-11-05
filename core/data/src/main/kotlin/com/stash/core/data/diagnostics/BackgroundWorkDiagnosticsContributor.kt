@@ -50,7 +50,7 @@ class BackgroundWorkDiagnosticsContributor @Inject constructor(
     internal var nowMs: () -> Long = System::currentTimeMillis
 
     override suspend fun section(): String = buildString {
-        appendLine("Android's rules for Stash:")
+        appendLine("Android's rules for KRYPT AUDIO:")
         rule("Battery optimization") {
             if (service<PowerManager>().isIgnoringBatteryOptimizations(context.packageName)) "unrestricted" else "optimized"
         }
@@ -66,7 +66,7 @@ class BackgroundWorkDiagnosticsContributor @Inject constructor(
         rule("Data Saver") {
             when (val status = service<ConnectivityManager>().restrictBackgroundStatus) {
                 ConnectivityManager.RESTRICT_BACKGROUND_STATUS_DISABLED -> "off"
-                ConnectivityManager.RESTRICT_BACKGROUND_STATUS_WHITELISTED -> "on (Stash allowed)"
+                ConnectivityManager.RESTRICT_BACKGROUND_STATUS_WHITELISTED -> "on (KRYPT AUDIO allowed)"
                 ConnectivityManager.RESTRICT_BACKGROUND_STATUS_ENABLED -> "on"
                 else -> "unknown ($status)"
             }

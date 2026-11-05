@@ -111,7 +111,7 @@ fun ShareTrackSheet(
         HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
 
         ShareRow(
-            label = "Stash link",
+            label = "KRYPT AUDIO link",
             tint = MaterialTheme.colorScheme.primary,
             busy = linking,
             onClick = {

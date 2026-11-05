@@ -57,9 +57,9 @@ object WebLibraryReader {
     const val MAX_NAME = 100
     const val MAX_SHARED_BY = 40
 
-    const val NOT_A_BACKUP = "That file isn't a Stash backup."
-    const val TOO_BIG = "That file is too big to be a Stash backup."
-    const val NEWER = "That backup comes from a newer Stash. Update Stash and try again."
+    const val NOT_A_BACKUP = "That file isn't a KRYPT AUDIO backup."
+    const val TOO_BIG = "That file is too big to be a KRYPT AUDIO backup."
+    const val NEWER = "That backup comes from a newer KRYPT AUDIO. Update KRYPT AUDIO and try again."
 
     /**
      * How much JSON structure a document may have before it is parsed into a tree (review B1): a parsed value costs tens of bytes

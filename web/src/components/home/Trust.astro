@@ -1,7 +1,7 @@
 ---
 /**
  * Three plain facts under the hero, and the credentials note. Only things that
- * are literally true: there's no Stash account, no analytics SDK in the app,
+ * are literally true: there's no KRYPT AUDIO account, no analytics SDK in the app,
  * and the code is open. "No subscription" and "No ads" are left out here and in
  * the README's opening: under a Spotify + YouTube Music headline they read as a
  * pitch to replace those services' paid plans.
@@ -9,7 +9,7 @@
 import Icon, { type IconName } from '../Icon.astro';
 
 const items: { icon: IconName; label: string }[] = [
-  { icon: 'person-off', label: 'No Stash account.' },
+  { icon: 'person-off', label: 'No KRYPT AUDIO account.' },
   { icon: 'visibility-off', label: 'No analytics.' },
   { icon: 'code', label: 'Open source.' },
 ];
@@ -18,7 +18,7 @@ const items: { icon: IconName; label: string }[] = [
 <section class="trust" aria-labelledby="trust-title">
   <div class="container">
     <div class="panel glass">
-      <h2 id="trust-title" class="visually-hidden">Stash at a glance</h2>
+      <h2 id="trust-title" class="visually-hidden">KRYPT AUDIO at a glance</h2>
       <ul role="list" class="items">
         {
           items.map((item) => (
@@ -36,7 +36,7 @@ const items: { icon: IconName; label: string }[] = [
           Your credentials live on your phone, with the Spotify, YouTube and Discord tokens encrypted, and each
           one is only ever sent back to the service it came from.
         </p>
-        <a class="arrow-link" href="/privacy">See everything Stash talks to <Icon name="arrow-forward" size="18px" /></a>
+        <a class="arrow-link" href="/privacy">See everything KRYPT AUDIO talks to <Icon name="arrow-forward" size="18px" /></a>
       </div>
     </div>
   </div>
@@ -58,7 +58,7 @@ const items: { icon: IconName; label: string }[] = [
 
   /*
    * Three columns with the icon beside its label. From 960px up each column
-   * leaves the longest label, "No Stash account.", at least 13px to spare
+   * leaves the longest label, "No KRYPT AUDIO account.", at least 13px to spare
    * (measured), so no label breaks onto a second line. Narrower screens use the
    * layouts below, which keep every label on one line down to about 310px.
    */

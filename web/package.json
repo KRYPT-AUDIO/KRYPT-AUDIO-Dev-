@@ -1,8 +1,8 @@
 {
-  "name": "stashfm-site",
+  "name": "krypt-audio-site",
   "version": "1.0.0",
   "private": true,
-  "description": "The website for Stash, served at https://stashfm.app",
+  "description": "The website for KRYPT AUDIO, served at https://stashfm.app",
   "type": "module",
   "engines": {
     "node": ">=22.12.0"

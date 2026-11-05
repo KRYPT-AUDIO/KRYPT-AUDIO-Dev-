@@ -65,10 +65,10 @@ class YourStashUiTest {
     }
 
     @Test fun `a failed read keeps the last list and says why`() {
-        val u = ui(link = linked(me, browser("c", "Chrome", now), problem = "Can't reach Stash right now. Try again in a minute."))
+        val u = ui(link = linked(me, browser("c", "Chrome", now), problem = "Can't reach KRYPT AUDIO right now. Try again in a minute."))
         val devices = u.devices as YourStashDevices.Linked
         assertThat(devices.rows).hasSize(2)
-        assertThat(devices.problem).isEqualTo("Can't reach Stash right now. Try again in a minute.")
+        assertThat(devices.problem).isEqualTo("Can't reach KRYPT AUDIO right now. Try again in a minute.")
     }
 
     @Test fun `linked with every browser removed keeps the link features, but there is nothing to send to`() {

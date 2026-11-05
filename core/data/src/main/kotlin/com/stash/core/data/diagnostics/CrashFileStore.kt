@@ -109,7 +109,7 @@ open class CrashFileStore @Inject constructor(
         val sw = StringWriter()
         throwable.printStackTrace(PrintWriter(sw))
         return buildString {
-            appendLine("Stash crash report")
+            appendLine("KRYPT AUDIO crash report")
             appendLine("==================")
             append(deviceMetadataBlock())
             appendLine("Thread:         ${thread.name}")

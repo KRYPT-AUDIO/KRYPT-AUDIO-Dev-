@@ -2,18 +2,18 @@ package com.stash.core.data.weblink
 
 /** What the screen shows (spec §2.2, §2.6, §12; sync-v1 §3.4, §3.6). One place, so the tests check the same words. */
 object WebLinkCopy {
-    const val NOT_A_CODE = "That's not a Stash code."
+    const val NOT_A_CODE = "That's not a KRYPT AUDIO code."
     const val USED = "This code was already used. Show a new one on your computer."
     const val EXPIRED = "This code expired. Show a new one."
     const val UNFINISHED = "Linking didn't finish. Show a new code on your computer."
-    const val OFFLINE = "Can't reach Stash right now. Try again in a minute."
+    const val OFFLINE = "Can't reach KRYPT AUDIO right now. Try again in a minute."
     const val SLOW_DOWN = "Too many tries. Wait a minute and try again."
     const val FULL = "You've linked 4 browsers. Remove one first."
     const val ALREADY_LINKED = "That browser is already linked."
     const val KEY_CHANGED = "Key changed: remove it and link it again"
     const val NOT_VERIFIED = "Not verified"
     const val CANT_READ = "Can't read your other devices: link again."
-    const val UPDATE_APP = "Update Stash to keep syncing."
+    const val UPDATE_APP = "Update KRYPT AUDIO to keep syncing."
     const val STORE_BUSY = "Can't read this phone's link right now. Try again in a moment."
 
     fun unlinkedFrom(name: String) = "Unlinked from $name."

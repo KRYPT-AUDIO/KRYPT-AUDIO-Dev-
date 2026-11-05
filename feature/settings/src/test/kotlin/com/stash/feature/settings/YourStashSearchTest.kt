@@ -12,7 +12,7 @@ class YourStashSearchTest {
 
     private val english = mapOf(
         R.string.settings_your_stash_title to "Your Stash",
-        R.string.settings_web_link_nav_title to "Link Stash on the web",
+        R.string.settings_web_link_nav_title to "Link KRYPT AUDIO on the web",
         R.string.settings_your_stash_section_devices to "Devices",
         R.string.settings_web_link_handoff_title to "Pick up where you left off",
         R.string.settings_mirror_section_title to "Mirror between your devices",
@@ -44,14 +44,14 @@ class YourStashSearchTest {
 
     @Test fun `the old name still finds the link, now on Your Stash`() {
         val hit = search("link stash on the web").first()
-        assertThat(hit.title).isEqualTo("Link Stash on the web")
+        assertThat(hit.title).isEqualTo("Link KRYPT AUDIO on the web")
         assertThat(hit.page).isEqualTo(SettingsPage.YOUR_STASH)
         // Nothing points at the old place any more.
-        assertThat(index.filter { it.page == SettingsPage.LIBRARY }.map { it.title }).doesNotContain("Link Stash on the web")
+        assertThat(index.filter { it.page == SettingsPage.LIBRARY }.map { it.title }).doesNotContain("Link KRYPT AUDIO on the web")
     }
 
     @Test fun `scanning words find the link`() {
-        assertThat(search("qr").map { it.title }).containsExactly("Link Stash on the web")
+        assertThat(search("qr").map { it.title }).containsExactly("Link KRYPT AUDIO on the web")
         assertThat(search("web player").map { it.page }.toSet()).containsExactly(SettingsPage.YOUR_STASH)
     }
 

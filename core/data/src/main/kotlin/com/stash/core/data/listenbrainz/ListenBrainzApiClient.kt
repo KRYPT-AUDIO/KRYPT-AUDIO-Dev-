@@ -142,8 +142,8 @@ class ListenBrainzApiClient @Inject constructor(
                 put("track_name", listen.title)
                 listen.album?.let { put("release_name", it) }
                 putJsonObject("additional_info") {
-                    put("media_player", "Stash")
-                    put("submission_client", "Stash")
+                    put("media_player", "KRYPT AUDIO")
+                    put("submission_client", "KRYPT AUDIO")
                     if (listen.durationMs > 0) put("duration_ms", listen.durationMs)
                 }
             }

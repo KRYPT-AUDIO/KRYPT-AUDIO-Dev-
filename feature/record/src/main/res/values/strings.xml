@@ -28,7 +28,7 @@
     <string name="record_card_hidden">Card hidden. Settings › Appearance › Home layout brings it back.</string>
     <!-- The invitation before there is a record: the sources that can come in (Spotify's export, Last.fm's scrobbles, Stash's own plays). -->
     <string name="record_invite_title">Press your record</string>
-    <string name="record_invite_body">Every year you’ve listened, in one place: from Spotify, Last.fm or Stash.</string>
+    <string name="record_invite_body">Every year you’ve listened, in one place: from Spotify, Last.fm or KRYPT AUDIO.</string>
     <string name="record_invite_start">Get started</string>
     <string name="record_invite_hide">Hide Press your record</string>
     <string name="record_close">Close</string>
@@ -58,7 +58,7 @@
     <!-- Bring your Spotify (stash-player ImportFlow.svelte, HomeCard.svelte): the Home card's import states. -->
     <!-- The record's sources, as chips on the invitation: brand names, never translated. -->
     <string name="record_source_spotify" translatable="false">Spotify</string>
-    <string name="record_source_stash" translatable="false">Stash</string>
+    <string name="record_source_stash" translatable="false">KRYPT AUDIO</string>
     <string name="record_source_lastfm" translatable="false">Last.fm</string>
     <string name="record_waiting_title">Waiting for Spotify</string>
     <!-- %1$s: the day they asked Spotify for their data ("Oct 21"). -->
@@ -72,7 +72,7 @@
     <string name="record_ready_body">Nothing is saved until you import.</string>
     <string name="record_ready_review">Review</string>
     <!-- The import sheet: how it works (three steps). -->
-    <string name="record_import_intro">Every year you’ve listened, in one place. Your plays in Stash are here already: start with Spotify or Last.fm, and add the other whenever you like.</string>
+    <string name="record_import_intro">Every year you’ve listened, in one place. Your plays in KRYPT AUDIO are here already: start with Spotify or Last.fm, and add the other whenever you like.</string>
     <string name="record_import_ask_title">Ask Spotify for your data</string>
     <!-- %1$s and %2$s: Spotify's own names for its two downloads (record_import_account_data, record_import_extended_history), set in bold. Use the names Spotify's privacy page shows in this language. -->
     <string name="record_import_ask_body">On Spotify’s privacy page, tick both: %1$s (about 5 days: playlists, likes and your last year) and %2$s (up to 30 days: everything, since your first song).</string>
@@ -83,11 +83,11 @@
     <string name="record_import_asked">Asked %1$s</string>
     <string name="record_import_email_title">Spotify emails you a zip</string>
     <string name="record_import_email_body">One for each. Download it as it comes; there’s no need to open it.</string>
-    <string name="record_import_open_title">Open the zip with Stash</string>
-    <string name="record_import_open_body">From the email or your files, use Open with or Share and pick Stash. Or choose it here.</string>
+    <string name="record_import_open_title">Open the zip with KRYPT AUDIO</string>
+    <string name="record_import_open_body">From the email or your files, use Open with or Share and pick KRYPT AUDIO. Or choose it here.</string>
     <string name="record_import_choose">Choose files</string>
     <string name="record_import_each">Bring each one as it arrives.</string>
-    <string name="record_import_private">Stash reads the file on this phone. Nothing is uploaded.</string>
+    <string name="record_import_private">KRYPT AUDIO reads the file on this phone. Nothing is uploaded.</string>
     <!-- Under the import sheet with Last.fm open, where there is no file: where the scrobbles come from, and that song lengths are looked up by the songs' names. -->
     <string name="record_import_private_lastfm">Your scrobbles come from Last.fm. Song lengths are looked up by song name.</string>
     <!-- The import sheet: reading and saving, with the year of the plays read so far counting up beneath. -->
@@ -167,7 +167,7 @@
     <string name="record_preview_import">Import</string>
     <string name="record_preview_cancel">Cancel</string>
     <string name="record_preview_add">Add another file</string>
-    <string name="record_preview_private">Nothing is saved until you import. Stash reads the file on this phone. Nothing is uploaded.</string>
+    <string name="record_preview_private">Nothing is saved until you import. KRYPT AUDIO reads the file on this phone. Nothing is uploaded.</string>
     <!-- The import sheet: when the files can't be used. -->
     <string name="record_error_nothing_new_title">You’ve brought this one already</string>
     <string name="record_error_nothing_new_body">Nothing new in it. When you have a newer copy, bring that one.</string>
@@ -186,7 +186,7 @@
     <string name="record_error_too_big_title">That’s far too big for a Spotify export</string>
     <string name="record_error_too_big_body">Spotify’s exports are much smaller, so it wasn’t read. Nothing was added.</string>
     <string name="record_unfinished_title">Your import didn’t finish</string>
-    <string name="record_unfinished_notice">Open Stash to try again: nothing will be counted twice.</string>
+    <string name="record_unfinished_notice">Open KRYPT AUDIO to try again: nothing will be counted twice.</string>
     <string name="record_unfinished_dismiss">Dismiss</string>
     <string name="record_error_choose_another">Choose another file</string>
     <string name="record_error_try_again">Try again</string>
@@ -227,16 +227,16 @@
     <!-- Progress: %1$s is the page just read, %2$s the pages in all (each formatted with separators), %3$s the scrobbles so far (record_lastfm_scrobbles: "600 scrobbles"). -->
     <string name="record_lastfm_progress">Page %1$s of %2$s · %3$s</string>
     <!-- After a run: %1$s is the scrobbles it brought (record_lastfm_scrobbles: "600 scrobbles"). -->
-    <string name="record_lastfm_done">%1$s in. Plays Spotify or Stash already had were counted once.</string>
+    <string name="record_lastfm_done">%1$s in. Plays Spotify or KRYPT AUDIO already had were counted once.</string>
     <string name="record_lastfm_done_none">Nothing new on Last.fm since last time. You’re up to date.</string>
     <!-- After a run that read the whole history, part of it carried on from before: %1$s is every scrobble the import holds (record_lastfm_scrobbles: "30,060 scrobbles"), %2$s how many came this time ("7,660", formatted with separators). -->
-    <string name="record_lastfm_done_part">%1$s in, %2$s of them this time. Plays Spotify or Stash already had were counted once.</string>
+    <string name="record_lastfm_done_part">%1$s in, %2$s of them this time. Plays Spotify or KRYPT AUDIO already had were counted once.</string>
     <!-- After a whole read that found nothing on Last.fm. -->
     <string name="record_lastfm_done_none_yet">No scrobbles on Last.fm yet. Anything you scrobble from now on comes in next time.</string>
     <!-- Said after the done line while pages Last.fm didn't send are left out (they are asked again on the next top-up). -->
-    <string name="record_lastfm_done_missing">Last.fm didn’t send part of your history; Stash will ask again next time.</string>
+    <string name="record_lastfm_done_missing">Last.fm didn’t send part of your history; KRYPT AUDIO will ask again next time.</string>
     <!-- Not connected to Last.fm, nothing brought in yet. -->
-    <string name="record_lastfm_idle_connect">Everything you’ve scrobbled, stacked on your record with Spotify and Stash.</string>
+    <string name="record_lastfm_idle_connect">Everything you’ve scrobbled, stacked on your record with Spotify and KRYPT AUDIO.</string>
     <!-- Not connected any more: %1$s is the scrobbles brought in before (record_lastfm_scrobbles), %2$s the Last.fm name they came from. -->
     <string name="record_lastfm_idle_had">%1$s in from %2$s. Connect Last.fm as %2$s to bring in newer ones.</string>
     <!-- Connected: %1$s is the Last.fm name. -->
@@ -255,9 +255,9 @@
     <string name="record_lastfm_see">See your record</string>
     <!-- Why the button waits: the Spotify import is writing. -->
     <string name="record_lastfm_after_spotify">After the Spotify import running now</string>
-    <string name="record_lastfm_hours_note">Last.fm doesn’t say how long you listened, so Stash counts each song’s length, from Spotify, your library or Last.fm itself.</string>
+    <string name="record_lastfm_hours_note">Last.fm doesn’t say how long you listened, so KRYPT AUDIO counts each song’s length, from Spotify, your library or Last.fm itself.</string>
     <!-- Each way a run can stop short: a title, a line, and (for the session) the button. -->
-    <string name="record_lastfm_reconnect_title">Last.fm signed Stash out</string>
+    <string name="record_lastfm_reconnect_title">Last.fm signed KRYPT AUDIO out</string>
     <string name="record_lastfm_reconnect_body">Connect the same account again and it carries on from where it stopped. Another account starts over, and the scrobbles already in stay.</string>
     <string name="record_lastfm_reconnect">Reconnect</string>
     <string name="record_lastfm_busy_title">Last.fm is busy</string>
@@ -273,7 +273,7 @@
     <string name="record_lastfm_settings_title">Import from Last.fm</string>
     <string name="record_lastfm_remove">Remove your Last.fm scrobbles</string>
     <!-- Under the remove row's title, as "Remove imported history" has its own line. -->
-    <string name="record_lastfm_remove_subtitle">Your Spotify history and your plays in Stash stay.</string>
+    <string name="record_lastfm_remove_subtitle">Your Spotify history and your plays in KRYPT AUDIO stay.</string>
     <string name="record_lastfm_remove_title">Remove your Last.fm scrobbles?</string>
     <string name="record_lastfm_remove_body">They leave your record on this phone. Your Spotify history and your Last.fm profile stay as they are.</string>
     <string name="record_lastfm_remove_confirm">Remove</string>
@@ -294,7 +294,7 @@
     <string name="record_import_taste">Working out your taste…</string>
     <string name="record_in_mixes_title">Use your record in mixes</string>
     <!-- The app’s own words (the web’s say "Daily Discover leans on…": only Daily Discover takes the record there; here every Stash Mix does). -->
-    <string name="record_in_mixes_subtitle">Your mixes, Daily Discover and your Stash Mixes, lean on the artists you’ve loved for years and leave out the songs you skip. Off, they go by what you play here.</string>
+    <string name="record_in_mixes_subtitle">Your mixes, Daily Discover and your KRYPT AUDIO Mixes, lean on the artists you’ve loved for years and leave out the songs you skip. Off, they go by what you play here.</string>
     <!-- %1$s: how many songs ("1,204"). -->
     <string name="record_kept_out_title">Kept out of your mixes (%1$s)</string>
     <string name="record_kept_out_on">Songs you hid on Spotify or keep skipping stay out of your mixes. Put one back and it can play in your next mixes.</string>
@@ -443,14 +443,14 @@
     <string name="record_mixes_artist_open">Open your most played songs by %1$s</string>
     <string name="record_mixes_artist_play">Play your most played songs by %1$s</string>
     <string name="record_mixes_top_songs">Top songs</string>
-    <string name="record_mixes_lost">Not in your Stash yet</string>
+    <string name="record_mixes_lost">Not in your KRYPT AUDIO yet</string>
     <!-- Under "Not in your Stash yet": %1$d how many songs it lists. -->
     <plurals name="record_mixes_lost_line">
         <item quantity="one">%1$d song you loved and haven’t played in a year. Like one to keep it.</item>
         <item quantity="other">%1$d songs you loved and haven’t played in a year. Like one to keep it.</item>
     </plurals>
     <!-- Read out for the list's Play: %1$s how many songs ("12 songs"). -->
-    <string name="record_mixes_lost_play">Play the %1$s not in your Stash yet</string>
+    <string name="record_mixes_lost_play">Play the %1$s not in your KRYPT AUDIO yet</string>
     <string name="record_mixes_show_more">Show more</string>
     <!-- A song row: read out for its long press (the song menu), %1$s the song; its heart. -->
     <string name="record_song_more">More for %1$s</string>

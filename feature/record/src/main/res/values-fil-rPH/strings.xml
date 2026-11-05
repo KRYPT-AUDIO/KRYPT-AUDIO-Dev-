@@ -13,7 +13,7 @@
     <string name="record_most_played">Pinakamadalas pakinggan: %1$s</string>
     <string name="record_open">Buksan ang record mo</string>
     <string name="record_invite_title">I-press ang record mo</string>
-    <string name="record_invite_body">Bawat taon ng pakikinig mo, nasa iisang lugar: mula sa Spotify, Last.fm o Stash.</string>
+    <string name="record_invite_body">Bawat taon ng pakikinig mo, nasa iisang lugar: mula sa Spotify, Last.fm o KRYPT AUDIO.</string>
     <string name="record_invite_start">Magsimula</string>
     <string name="record_invite_hide">Itago ang I-press ang record mo</string>
     <string name="record_close">Isara</string>
@@ -45,7 +45,7 @@
     <string name="record_ready_title">Handa nang i-press</string>
     <string name="record_ready_body">Walang mase-save hangga’t hindi ka nag-i-import.</string>
     <string name="record_ready_review">Suriin</string>
-    <string name="record_import_intro">Bawat taon ng pakikinig mo, nasa iisang lugar. Nandito na ang mga play mo sa Stash: magsimula sa Spotify o Last.fm, at idagdag ang isa pa kahit kailan mo gusto.</string>
+    <string name="record_import_intro">Bawat taon ng pakikinig mo, nasa iisang lugar. Nandito na ang mga play mo sa KRYPT AUDIO: magsimula sa Spotify o Last.fm, at idagdag ang isa pa kahit kailan mo gusto.</string>
     <string name="record_import_ask_title">Hingin sa Spotify ang data mo</string>
     <string name="record_import_ask_body">Sa privacy page ng Spotify, i-tick ang dalawa: %1$s (mga 5 araw: mga playlist, like at ang huling taon mo) at %2$s (hanggang 30 araw: lahat, mula sa una mong kanta).</string>
     <string name="record_import_account_data">Account data</string>
@@ -54,11 +54,11 @@
     <string name="record_import_asked">Hiniling noong %1$s</string>
     <string name="record_import_email_title">Magpapadala ang Spotify ng zip sa email mo</string>
     <string name="record_import_email_body">Isa para sa bawat isa. I-download ito pagdating; hindi na kailangang buksan.</string>
-    <string name="record_import_open_title">Buksan ang zip gamit ang Stash</string>
-    <string name="record_import_open_body">Mula sa email o sa mga file mo, gamitin ang “Buksan gamit ang” o “Ibahagi” at piliin ang Stash. O piliin ito rito.</string>
+    <string name="record_import_open_title">Buksan ang zip gamit ang KRYPT AUDIO</string>
+    <string name="record_import_open_body">Mula sa email o sa mga file mo, gamitin ang “Buksan gamit ang” o “Ibahagi” at piliin ang KRYPT AUDIO. O piliin ito rito.</string>
     <string name="record_import_choose">Pumili ng mga file</string>
     <string name="record_import_each">Idagdag ang bawat isa pagdating nito.</string>
-    <string name="record_import_private">Binabasa ng Stash ang file sa phone na ito. Walang ina-upload.</string>
+    <string name="record_import_private">Binabasa ng KRYPT AUDIO ang file sa phone na ito. Walang ina-upload.</string>
     <string name="record_import_private_lastfm">Galing sa Last.fm ang mga scrobble mo. Hinahanap ang haba ng mga kanta gamit ang pangalan ng kanta.</string>
     <string name="record_import_working_title">Idinadagdag ang pakikinig mo</string>
     <string name="record_import_opening">Binubuksan ang mga file mo…</string>
@@ -120,7 +120,7 @@
     <string name="record_preview_import">I-import</string>
     <string name="record_preview_cancel">Kanselahin</string>
     <string name="record_preview_add">Magdagdag ng isa pang file</string>
-    <string name="record_preview_private">Walang mase-save hangga’t hindi ka nag-i-import. Binabasa ng Stash ang file sa phone na ito. Walang ina-upload.</string>
+    <string name="record_preview_private">Walang mase-save hangga’t hindi ka nag-i-import. Binabasa ng KRYPT AUDIO ang file sa phone na ito. Walang ina-upload.</string>
     <string name="record_error_nothing_new_title">Naidagdag mo na ito</string>
     <string name="record_error_nothing_new_body">Walang bago rito. Kapag may mas bagong kopya ka, iyon ang idagdag.</string>
     <string name="record_error_not_export_title">Hindi iyan Spotify export</string>
@@ -138,7 +138,7 @@
     <string name="record_error_too_big_title">Masyadong malaki iyan para maging Spotify export</string>
     <string name="record_error_too_big_body">Mas maliit ang mga Spotify export, kaya hindi ito binasa. Walang naidagdag.</string>
     <string name="record_unfinished_title">Hindi natapos ang pag-import mo</string>
-    <string name="record_unfinished_notice">Buksan ang Stash para subukan ulit: walang mabibilang nang dalawang beses.</string>
+    <string name="record_unfinished_notice">Buksan ang KRYPT AUDIO para subukan ulit: walang mabibilang nang dalawang beses.</string>
     <string name="record_unfinished_dismiss">Isara</string>
     <string name="record_error_choose_another">Pumili ng ibang file</string>
     <string name="record_error_try_again">Subukan ulit</string>
@@ -171,12 +171,12 @@
     </plurals>
     <string name="record_lastfm_asking">Tinatanong ang Last.fm…</string>
     <string name="record_lastfm_progress">Page %1$s sa %2$s · %3$s</string>
-    <string name="record_lastfm_done">Naidagdag ang %1$s. Isang beses lang binilang ang mga play na nasa Spotify o Stash na.</string>
+    <string name="record_lastfm_done">Naidagdag ang %1$s. Isang beses lang binilang ang mga play na nasa Spotify o KRYPT AUDIO na.</string>
     <string name="record_lastfm_done_none">Walang bago sa Last.fm mula noong huli. Updated ka na.</string>
-    <string name="record_lastfm_done_part">Naidagdag ang %1$s, %2$s dito ngayong beses. Isang beses lang binilang ang mga play na nasa Spotify o Stash na.</string>
+    <string name="record_lastfm_done_part">Naidagdag ang %1$s, %2$s dito ngayong beses. Isang beses lang binilang ang mga play na nasa Spotify o KRYPT AUDIO na.</string>
     <string name="record_lastfm_done_none_yet">Wala pang scrobble sa Last.fm. Lahat ng i-scrobble mo mula ngayon ay idadagdag sa susunod.</string>
-    <string name="record_lastfm_done_missing">Hindi ipinadala ng Last.fm ang bahagi ng history mo; hihingin ulit ito ng Stash sa susunod.</string>
-    <string name="record_lastfm_idle_connect">Lahat ng na-scrobble mo, nakapatong sa record mo kasama ang Spotify at Stash.</string>
+    <string name="record_lastfm_done_missing">Hindi ipinadala ng Last.fm ang bahagi ng history mo; hihingin ulit ito ng KRYPT AUDIO sa susunod.</string>
+    <string name="record_lastfm_idle_connect">Lahat ng na-scrobble mo, nakapatong sa record mo kasama ang Spotify at KRYPT AUDIO.</string>
     <string name="record_lastfm_idle_had">Naidagdag ang %1$s mula sa %2$s. Ikonekta ang Last.fm bilang %2$s para idagdag ang mas bago.</string>
     <string name="record_lastfm_idle_bring">Idagdag ang lahat ng na-scrobble mo bilang %1$s.</string>
     <string name="record_lastfm_idle_bring_beside">Idagdag ang lahat ng na-scrobble mo bilang %1$s. Mananatili ang mga scrobble na nasa record mo na.</string>
@@ -189,8 +189,8 @@
     <string name="record_lastfm_stop">Ihinto</string>
     <string name="record_lastfm_see">Tingnan ang record mo</string>
     <string name="record_lastfm_after_spotify">Pagkatapos ng Spotify import na tumatakbo ngayon</string>
-    <string name="record_lastfm_hours_note">Hindi sinasabi ng Last.fm kung gaano ka katagal nakinig, kaya binibilang ng Stash ang haba ng bawat kanta, mula sa Spotify, sa library mo o sa Last.fm mismo.</string>
-    <string name="record_lastfm_reconnect_title">Na-sign out ng Last.fm ang Stash</string>
+    <string name="record_lastfm_hours_note">Hindi sinasabi ng Last.fm kung gaano ka katagal nakinig, kaya binibilang ng KRYPT AUDIO ang haba ng bawat kanta, mula sa Spotify, sa library mo o sa Last.fm mismo.</string>
+    <string name="record_lastfm_reconnect_title">Na-sign out ng Last.fm ang KRYPT AUDIO</string>
     <string name="record_lastfm_reconnect_body">Ikonekta ulit ang parehong account at itutuloy ito mula sa kung saan ito huminto. Magsisimula ulit ang ibang account, at mananatili ang mga scrobble na naidagdag na.</string>
     <string name="record_lastfm_reconnect">Kumonekta ulit</string>
     <string name="record_lastfm_busy_title">Busy ang Last.fm</string>
@@ -202,7 +202,7 @@
     <string name="record_lastfm_working_title">Idinadagdag ang mga Last.fm scrobble mo</string>
     <string name="record_lastfm_settings_title">I-import mula sa Last.fm</string>
     <string name="record_lastfm_remove">Alisin ang mga Last.fm scrobble mo</string>
-    <string name="record_lastfm_remove_subtitle">Mananatili ang Spotify history mo at ang mga play mo sa Stash.</string>
+    <string name="record_lastfm_remove_subtitle">Mananatili ang Spotify history mo at ang mga play mo sa KRYPT AUDIO.</string>
     <string name="record_lastfm_remove_title">Alisin ang mga Last.fm scrobble mo?</string>
     <string name="record_lastfm_remove_body">Aalis ang mga ito sa record mo sa phone na ito. Mananatili ang Spotify history mo at ang Last.fm profile mo.</string>
     <string name="record_lastfm_remove_confirm">Alisin</string>
@@ -218,7 +218,7 @@
     <string name="record_intake_busy">May import na tumatakbo. Idagdag ito kapag tapos na iyon.</string>
     <string name="record_import_taste">Inaalam ang panlasa mo…</string>
     <string name="record_in_mixes_title">Gamitin ang record mo sa mga mix</string>
-    <string name="record_in_mixes_subtitle">Nakasandal ang mga mix mo, ang Daily Discover at ang mga Stash Mix mo, sa mga artist na matagal mo nang mahal, at iniiwan ang mga kantang nilalaktawan mo. Kapag naka-off, sinusundan nila ang pinapatugtog mo rito.</string>
+    <string name="record_in_mixes_subtitle">Nakasandal ang mga mix mo, ang Daily Discover at ang mga KRYPT AUDIO Mix mo, sa mga artist na matagal mo nang mahal, at iniiwan ang mga kantang nilalaktawan mo. Kapag naka-off, sinusundan nila ang pinapatugtog mo rito.</string>
     <string name="record_kept_out_title">Hindi isinasama sa mga mix mo (%1$s)</string>
     <string name="record_kept_out_on">Hindi isinasama sa mga mix mo ang mga kantang itinago mo sa Spotify o lagi mong nilalaktawan. Ibalik ang isa at puwede itong tumugtog sa mga susunod mong mix.</string>
     <string name="record_kept_out_off">Hindi ito isinasama sa mga mix ng record mo. Ibalik ang isa at puwede ulit itong tumugtog doon.</string>
@@ -329,12 +329,12 @@
     <string name="record_mixes_artist_open">Buksan ang mga kanta ni %1$s na pinakamadalas mong pinatugtog</string>
     <string name="record_mixes_artist_play">I-play ang mga kanta ni %1$s na pinakamadalas mong pinatugtog</string>
     <string name="record_mixes_top_songs">Mga nangungunang kanta</string>
-    <string name="record_mixes_lost">Wala pa sa Stash mo</string>
+    <string name="record_mixes_lost">Wala pa sa KRYPT AUDIO mo</string>
     <plurals name="record_mixes_lost_line">
         <item quantity="one">%1$d kantang minahal mo at isang taon mo nang hindi pinapatugtog. I-like ito para itago.</item>
         <item quantity="other">%1$d na kantang minahal mo at isang taon mo nang hindi pinapatugtog. Mag-like ng isa para itago ito.</item>
     </plurals>
-    <string name="record_mixes_lost_play">I-play ang “Wala pa sa Stash mo” (%1$s)</string>
+    <string name="record_mixes_lost_play">I-play ang “Wala pa sa KRYPT AUDIO mo” (%1$s)</string>
     <string name="record_mixes_show_more">Ipakita pa</string>
     <string name="record_song_more">Higit pa para sa %1$s</string>
     <string name="record_song_like">I-like</string>

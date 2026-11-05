@@ -13,7 +13,7 @@
     <string name="record_most_played">Mais ouvido: %1$s</string>
     <string name="record_open">Abrir seu disco</string>
     <string name="record_invite_title">Prense seu disco</string>
-    <string name="record_invite_body">Todos os anos que você ouviu, em um só lugar: do Spotify, do Last.fm ou do Stash.</string>
+    <string name="record_invite_body">Todos os anos que você ouviu, em um só lugar: do Spotify, do Last.fm ou do KRYPT AUDIO.</string>
     <string name="record_invite_start">Começar</string>
     <string name="record_invite_hide">Ocultar Prense seu disco</string>
     <string name="record_close">Fechar</string>
@@ -45,7 +45,7 @@
     <string name="record_ready_title">Pronto para prensar</string>
     <string name="record_ready_body">Nada é salvo até você importar.</string>
     <string name="record_ready_review">Revisar</string>
-    <string name="record_import_intro">Todos os anos que você ouviu, em um só lugar. Suas reproduções no Stash já estão aqui: comece pelo Spotify ou pelo Last.fm, e adicione o outro quando quiser.</string>
+    <string name="record_import_intro">Todos os anos que você ouviu, em um só lugar. Suas reproduções no KRYPT AUDIO já estão aqui: comece pelo Spotify ou pelo Last.fm, e adicione o outro quando quiser.</string>
     <string name="record_import_ask_title">Peça seus dados ao Spotify</string>
     <string name="record_import_ask_body">Na página de privacidade do Spotify, marque os dois: %1$s (cerca de 5 dias: playlists, curtidas e seu último ano) e %2$s (até 30 dias: tudo, desde sua primeira música).</string>
     <string name="record_import_account_data">Dados da conta</string>
@@ -54,11 +54,11 @@
     <string name="record_import_asked">Pedido em %1$s</string>
     <string name="record_import_email_title">O Spotify envia um zip por e-mail</string>
     <string name="record_import_email_body">Um para cada pedido. Baixe assim que chegar; não precisa abrir.</string>
-    <string name="record_import_open_title">Abra o zip com o Stash</string>
-    <string name="record_import_open_body">No e-mail ou nos seus arquivos, use Abrir com ou Compartilhar e escolha o Stash. Ou escolha aqui.</string>
+    <string name="record_import_open_title">Abra o zip com o KRYPT AUDIO</string>
+    <string name="record_import_open_body">No e-mail ou nos seus arquivos, use Abrir com ou Compartilhar e escolha o KRYPT AUDIO. Ou escolha aqui.</string>
     <string name="record_import_choose">Escolher arquivos</string>
     <string name="record_import_each">Adicione cada um assim que chegar.</string>
-    <string name="record_import_private">O Stash lê o arquivo neste celular. Nada é enviado.</string>
+    <string name="record_import_private">O KRYPT AUDIO lê o arquivo neste celular. Nada é enviado.</string>
     <string name="record_import_private_lastfm">Seus scrobbles vêm do Last.fm. A duração das músicas é buscada pelo nome.</string>
     <string name="record_import_working_title">Trazendo seu histórico</string>
     <string name="record_import_opening">Abrindo seus arquivos…</string>
@@ -120,7 +120,7 @@
     <string name="record_preview_import">Importar</string>
     <string name="record_preview_cancel">Cancelar</string>
     <string name="record_preview_add">Adicionar outro arquivo</string>
-    <string name="record_preview_private">Nada é salvo até você importar. O Stash lê o arquivo neste celular. Nada é enviado.</string>
+    <string name="record_preview_private">Nada é salvo até você importar. O KRYPT AUDIO lê o arquivo neste celular. Nada é enviado.</string>
     <string name="record_error_nothing_new_title">Você já adicionou este</string>
     <string name="record_error_nothing_new_body">Não há nada novo nele. Quando tiver uma cópia mais recente, adicione essa.</string>
     <string name="record_error_not_export_title">Isso não é uma exportação do Spotify</string>
@@ -138,7 +138,7 @@
     <string name="record_error_too_big_title">Isso é grande demais para uma exportação do Spotify</string>
     <string name="record_error_too_big_body">As exportações do Spotify são bem menores, então isso não foi lido. Nada foi adicionado.</string>
     <string name="record_unfinished_title">Sua importação não terminou</string>
-    <string name="record_unfinished_notice">Abra o Stash para tentar de novo: nada será contado duas vezes.</string>
+    <string name="record_unfinished_notice">Abra o KRYPT AUDIO para tentar de novo: nada será contado duas vezes.</string>
     <string name="record_unfinished_dismiss">Dispensar</string>
     <string name="record_error_choose_another">Escolher outro arquivo</string>
     <string name="record_error_try_again">Tentar novamente</string>
@@ -171,12 +171,12 @@
     </plurals>
     <string name="record_lastfm_asking">Consultando o Last.fm…</string>
     <string name="record_lastfm_progress">Página %1$s de %2$s · %3$s</string>
-    <string name="record_lastfm_done">Pronto: %1$s. As reproduções que o Spotify ou o Stash já tinham contaram uma vez só.</string>
+    <string name="record_lastfm_done">Pronto: %1$s. As reproduções que o Spotify ou o KRYPT AUDIO já tinham contaram uma vez só.</string>
     <string name="record_lastfm_done_none">Nada novo no Last.fm desde a última vez. Está tudo em dia.</string>
-    <string name="record_lastfm_done_part">Pronto: %1$s, %2$s deles desta vez. As reproduções que o Spotify ou o Stash já tinham contaram uma vez só.</string>
+    <string name="record_lastfm_done_part">Pronto: %1$s, %2$s deles desta vez. As reproduções que o Spotify ou o KRYPT AUDIO já tinham contaram uma vez só.</string>
     <string name="record_lastfm_done_none_yet">Ainda não há scrobbles no Last.fm. Tudo o que você scrobblar a partir de agora chega na próxima vez.</string>
-    <string name="record_lastfm_done_missing">O Last.fm não enviou parte do seu histórico; o Stash vai pedir de novo na próxima vez.</string>
-    <string name="record_lastfm_idle_connect">Todos os seus scrobbles, somados ao seu disco com o Spotify e o Stash.</string>
+    <string name="record_lastfm_done_missing">O Last.fm não enviou parte do seu histórico; o KRYPT AUDIO vai pedir de novo na próxima vez.</string>
+    <string name="record_lastfm_idle_connect">Todos os seus scrobbles, somados ao seu disco com o Spotify e o KRYPT AUDIO.</string>
     <string name="record_lastfm_idle_had">Você já tem %1$s de %2$s. Conecte o Last.fm como %2$s para trazer os mais novos.</string>
     <string name="record_lastfm_idle_bring">Traga todos os seus scrobbles como %1$s.</string>
     <string name="record_lastfm_idle_bring_beside">Traga todos os seus scrobbles como %1$s. Os scrobbles que já estão no seu disco continuam.</string>
@@ -189,8 +189,8 @@
     <string name="record_lastfm_stop">Parar</string>
     <string name="record_lastfm_see">Ver seu disco</string>
     <string name="record_lastfm_after_spotify">Depois da importação do Spotify em andamento</string>
-    <string name="record_lastfm_hours_note">O Last.fm não informa quanto tempo você ouviu, então o Stash conta a duração de cada música, pelo Spotify, pela sua biblioteca ou pelo próprio Last.fm.</string>
-    <string name="record_lastfm_reconnect_title">O Last.fm desconectou o Stash</string>
+    <string name="record_lastfm_hours_note">O Last.fm não informa quanto tempo você ouviu, então o KRYPT AUDIO conta a duração de cada música, pelo Spotify, pela sua biblioteca ou pelo próprio Last.fm.</string>
+    <string name="record_lastfm_reconnect_title">O Last.fm desconectou o KRYPT AUDIO</string>
     <string name="record_lastfm_reconnect_body">Conecte a mesma conta de novo e ele continua de onde parou. Outra conta começa do zero, e os scrobbles que já estão aqui continuam.</string>
     <string name="record_lastfm_reconnect">Reconectar</string>
     <string name="record_lastfm_busy_title">O Last.fm está sobrecarregado</string>
@@ -202,7 +202,7 @@
     <string name="record_lastfm_working_title">Trazendo seus scrobbles do Last.fm</string>
     <string name="record_lastfm_settings_title">Importar do Last.fm</string>
     <string name="record_lastfm_remove">Remover seus scrobbles do Last.fm</string>
-    <string name="record_lastfm_remove_subtitle">Seu histórico do Spotify e suas reproduções no Stash ficam.</string>
+    <string name="record_lastfm_remove_subtitle">Seu histórico do Spotify e suas reproduções no KRYPT AUDIO ficam.</string>
     <string name="record_lastfm_remove_title">Remover seus scrobbles do Last.fm?</string>
     <string name="record_lastfm_remove_body">Eles saem do seu disco neste celular. Seu histórico do Spotify e seu perfil do Last.fm continuam como estão.</string>
     <string name="record_lastfm_remove_confirm">Remover</string>
@@ -218,7 +218,7 @@
     <string name="record_intake_busy">Uma importação está em andamento. Adicione quando ela terminar.</string>
     <string name="record_import_taste">Calculando seu gosto…</string>
     <string name="record_in_mixes_title">Usar seu disco nos mixes</string>
-    <string name="record_in_mixes_subtitle">Seus mixes, o Daily Discover e seus Stash Mixes, se apoiam nos artistas que você ama há anos e deixam de fora as músicas que você pula. Desligado, eles seguem o que você ouve aqui.</string>
+    <string name="record_in_mixes_subtitle">Seus mixes, o Daily Discover e seus KRYPT AUDIO Mixes, se apoiam nos artistas que você ama há anos e deixam de fora as músicas que você pula. Desligado, eles seguem o que você ouve aqui.</string>
     <string name="record_kept_out_title">Fora dos seus mixes (%1$s)</string>
     <string name="record_kept_out_on">Músicas que você ocultou no Spotify ou vive pulando ficam fora dos seus mixes. Traga uma de volta e ela pode tocar nos seus próximos mixes.</string>
     <string name="record_kept_out_off">Estas ficam fora dos mixes do seu disco. Traga uma de volta e ela pode tocar neles de novo.</string>
@@ -330,12 +330,12 @@
     <string name="record_mixes_artist_open">Abrir suas músicas mais ouvidas de %1$s</string>
     <string name="record_mixes_artist_play">Tocar suas músicas mais ouvidas de %1$s</string>
     <string name="record_mixes_top_songs">Músicas mais ouvidas</string>
-    <string name="record_mixes_lost">Ainda não estão no seu Stash</string>
+    <string name="record_mixes_lost">Ainda não estão no seu KRYPT AUDIO</string>
     <plurals name="record_mixes_lost_line">
         <item quantity="one">%1$d música que você amava e não ouve há um ano. Curta para guardá-la.</item>
         <item quantity="other">%1$d músicas que você amava e não ouve há um ano. Curta uma para guardá-la.</item>
     </plurals>
-    <string name="record_mixes_lost_play">Tocar “Ainda não estão no seu Stash” (%1$s)</string>
+    <string name="record_mixes_lost_play">Tocar “Ainda não estão no seu KRYPT AUDIO” (%1$s)</string>
     <string name="record_mixes_show_more">Mostrar mais</string>
     <string name="record_song_more">Mais opções para %1$s</string>
     <string name="record_song_like">Curtir</string>

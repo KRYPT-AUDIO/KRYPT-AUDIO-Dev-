@@ -518,7 +518,7 @@ class DatabaseBackupManager @Inject constructor(
             db.execSQL("UPDATE playlists SET snapshot_id = NULL WHERE snapshot_id IS NOT NULL")
         } catch (e: Exception) {
             throw IllegalStateException(
-                "This backup could not be upgraded to this version of Stash, so it was not restored.", e,
+                "This backup could not be upgraded to this version of KRYPT AUDIO, so it was not restored.", e,
             )
         } finally {
             staged.close()
@@ -572,7 +572,7 @@ class DatabaseBackupManager @Inject constructor(
                             val manifest = json.decodeFromString<BackupManifest>(zipIn.readBytes().decodeToString())
                             if (manifest.dbSchemaVersion > currentDbVersion) {
                                 throw IllegalStateException(
-                                    "Backup is from a newer version of Stash (Schema ${manifest.dbSchemaVersion}). " +
+                                    "Backup is from a newer version of KRYPT AUDIO (Schema ${manifest.dbSchemaVersion}). " +
                                         "Please update the app before importing."
                                 )
                             }
@@ -582,7 +582,7 @@ class DatabaseBackupManager @Inject constructor(
                         entry = zipIn.nextEntry
                     }
                     if (!manifestFound) {
-                        throw IllegalStateException("The selected file is not a valid Stash backup.")
+                        throw IllegalStateException("The selected file is not a valid KRYPT AUDIO backup.")
                     }
                 }
             } ?: throw IllegalStateException("Could not open input stream for validation")
