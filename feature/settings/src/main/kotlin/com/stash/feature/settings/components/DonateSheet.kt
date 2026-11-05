@@ -44,12 +44,8 @@ import com.stash.feature.settings.R
  * stashfm.app site (web/src/data/site.ts); if one changes there, change it here.
  */
 object DonateLinks {
-    const val KOFI = "https://ko-fi.com/rawnald"
-    const val PAYPAL_RAWN = "https://www.paypal.me/rawnaldclark"
-    const val SPONSORS = "https://github.com/sponsors/rawnaldclark"
-    /** rawn's Stripe Payment Link in INR with UPI on, for supporters in India. */
-    const val UPI = "https://buy.stripe.com/bJe4gz5uP8GP7z454D1gs00"
-    const val PAYPAL_EVO = "https://www.paypal.com/paypalme/Paraliyzedevo"
+    const val KOFI = "https://ko-fi.com/synapse_labs_uk"
+    const val PAYPAL = "https://PayPal.me/0KRYPT"
 }
 
 /** One donate button: its label and the URL it opens. */
@@ -91,23 +87,13 @@ fun DonateSheet(
             )
             Spacer(Modifier.height(4.dp))
             PersonCard(
-                avatar = R.drawable.donate_avatar_rawn,
-                name = "rawn",
+                avatar = R.drawable.donate_avatar_synapse_labs_uk,
+                name = "Synapse Labs UK Ltd",
                 role = R.string.settings_donate_role_owner,
                 links = listOf(
                     DonateLink(R.string.settings_donate_kofi, DonateLinks.KOFI),
-                    DonateLink(R.string.settings_donate_paypal, DonateLinks.PAYPAL_RAWN),
-                    DonateLink(R.string.settings_donate_sponsors, DonateLinks.SPONSORS),
-                    DonateLink(R.string.settings_donate_upi, DonateLinks.UPI),
+                    DonateLink(R.string.settings_donate_paypal, DonateLinks.PAYPAL),
                 ),
-                hint = R.string.settings_donate_upi_hint,
-                onOpenUrl = onOpenUrl,
-            )
-            PersonCard(
-                avatar = R.drawable.donate_avatar_evo,
-                name = "Evo (Paraliyzed_evo)",
-                role = R.string.settings_donate_role_codev,
-                links = listOf(DonateLink(R.string.settings_donate_paypal, DonateLinks.PAYPAL_EVO)),
                 hint = null,
                 onOpenUrl = onOpenUrl,
             )

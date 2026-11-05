@@ -70,12 +70,8 @@
     <string name="settings_donate_sheet_title">Apoya a KRYPT AUDIO</string>
     <string name="settings_donate_sheet_thanks">KRYPT AUDIO es gratuito. Gracias por ayudar a que siga adelante.</string>
     <string name="settings_donate_role_owner">Creador de KRYPT AUDIO, desarrollador principal</string>
-    <string name="settings_donate_role_codev">Colabora en el desarrollo de KRYPT AUDIO</string>
     <string name="settings_donate_kofi">Ko-fi</string>
     <string name="settings_donate_paypal">PayPal</string>
-    <string name="settings_donate_sponsors">GitHub Sponsors</string>
-    <string name="settings_donate_upi">UPI (India)</string>
-    <string name="settings_donate_upi_hint">UPI es para mecenas de la India.</string>
     <string name="settings_support_star">Marcar con estrella</string>
     <!-- Settings > Accounts & Sync -->
     <string name="settings_accounts_connections_section">Conexiones</string>

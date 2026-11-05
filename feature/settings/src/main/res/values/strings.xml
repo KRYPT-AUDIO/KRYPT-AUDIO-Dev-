@@ -114,12 +114,8 @@
     <string name="settings_donate_sheet_title">Support KRYPT AUDIO</string>
     <string name="settings_donate_sheet_thanks">KRYPT AUDIO is free. Thank you for helping keep it going.</string>
     <string name="settings_donate_role_owner">KRYPT AUDIO creator, main dev</string>
-    <string name="settings_donate_role_codev">Co-develops KRYPT AUDIO</string>
     <string name="settings_donate_kofi">Ko-fi</string>
     <string name="settings_donate_paypal">PayPal</string>
-    <string name="settings_donate_sponsors">GitHub Sponsors</string>
-    <string name="settings_donate_upi">UPI (India)</string>
-    <string name="settings_donate_upi_hint">UPI is for supporters in India.</string>
     <string name="settings_support_star">Star</string>
     <!-- The Support card (2026-11): one line under "Support Stash", beside the two makers' pictures. -->
     <string name="settings_support_tagline">Keeps KRYPT AUDIO running and updated, and pays for its servers and hosting.</string>

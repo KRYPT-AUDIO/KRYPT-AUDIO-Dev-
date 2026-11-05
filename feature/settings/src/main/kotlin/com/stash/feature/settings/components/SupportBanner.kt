@@ -147,14 +147,13 @@ fun SupportBanner(
 }
 
 /**
- * rawn and Evo, the two people the donations go to (the same pictures as the [DonateSheet]'s cards): 36 dp circles,
- * the second tucked behind the first, each ringed in the page colour so the overlap reads. Decorative: the sheet
- * names them.
+ * The people behind KRYPT AUDIO: 36 dp circles, the second tucked behind the first, each ringed in the page colour
+ * so the overlap reads. Decorative: the donation sheet contains the detailed profile.
  */
 @Composable
 private fun Makers() {
     Row(Modifier.clearAndSetSemantics { }, horizontalArrangement = Arrangement.spacedBy(-AvatarOverlap)) {
-        Avatar(R.drawable.donate_avatar_rawn, Modifier.zIndex(1f))
+        Avatar(R.drawable.donate_avatar_synapse_labs_uk, Modifier.zIndex(1f))
         Avatar(R.drawable.donate_avatar_evo)
     }
 }

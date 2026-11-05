@@ -69,12 +69,8 @@
     <string name="settings_donate_sheet_title">KRYPT AUDIO 후원</string>
     <string name="settings_donate_sheet_thanks">KRYPT AUDIO는 무료입니다. 계속 운영할 수 있도록 도와주셔서 감사합니다</string>
     <string name="settings_donate_role_owner">KRYPT AUDIO 제작자, 메인 개발자</string>
-    <string name="settings_donate_role_codev">KRYPT AUDIO 공동 개발자</string>
     <string name="settings_donate_kofi">Ko-fi</string>
     <string name="settings_donate_paypal">PayPal</string>
-    <string name="settings_donate_sponsors">GitHub Sponsors</string>
-    <string name="settings_donate_upi">UPI (인도)</string>
-    <string name="settings_donate_upi_hint">UPI는 인도 후원자를 위한 것입니다</string>
     <string name="settings_support_star">별</string>
     <!-- Settings > Accounts & Sync -->
     <string name="settings_accounts_connections_section">연결</string>
