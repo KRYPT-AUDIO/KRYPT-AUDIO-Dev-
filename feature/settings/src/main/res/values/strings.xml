@@ -129,10 +129,6 @@
     <string name="settings_support_thanks_title">Thank you for supporting KRYPT AUDIO</string>
     <string name="settings_support_thanks_line">You\'re a supporter: unlimited Tidal &amp; Qobuz is on.</string>
     <string name="settings_support_donate_again">Donate again</string>
-    <!-- Settings › About: the GitHub star moved here from the Support card. -->
-    <string name="settings_about_star">Star KRYPT AUDIO on GitHub</string>
-    <string name="settings_about_star_detail">github.com/rawnaldclark/KRYPT AUDIO</string>
-
     <!-- Settings > Accounts & Sync -->
     <string name="settings_accounts_connections_section">Connections</string>
     <string name="settings_yt_music_error_title">YouTube Music</string>

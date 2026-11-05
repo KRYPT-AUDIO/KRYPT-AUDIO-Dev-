@@ -155,6 +155,5 @@ internal fun settingsSearchIndex(s: (Int) -> String): List<SettingsSearchEntry> 
         SettingsSearchEntry(s(R.string.settings_share_diagnostics_bundle), SettingsPage.ABOUT, listOf("logs", "bug", "report", "problem")),
         SettingsSearchEntry(s(R.string.settings_share_latest_crash), SettingsPage.ABOUT, listOf("crash", "bug")),
         SettingsSearchEntry(s(R.string.settings_license_label), SettingsPage.ABOUT, listOf("open source")),
-        SettingsSearchEntry(s(R.string.settings_about_star), SettingsPage.ABOUT, listOf("star", "github", "source code", "repository")),
     )
 }
