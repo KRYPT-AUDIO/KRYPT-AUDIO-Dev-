@@ -12,7 +12,7 @@ import com.stash.feature.home.banner.MetadataBackfillBannerState
  * Library content (Stash/daily mixes, liked songs, recently-added, custom
  * playlists) used to live here too; it has been relocated to the Library
  * screen. Home now carries only the Discover hero plus the persistent
- * "chrome" (tip jar pill, lossless prompt, metadata-backfill banner).
+ * "chrome" (lossless prompt and metadata-backfill banner).
  *
  * Note: sync-status, per-source connection booleans, and `hasEverSynced`
  * used to live here too — they powered the SyncStatusCard at the top of
@@ -45,17 +45,6 @@ data class HomeUiState(
      * and they haven't dismissed the notice. Tap opens Settings › Audio.
      */
     val showLosslessOffline: Boolean = false,
-
-    /**
-     * v0.9.13: live tip-jar state. Drives the Home pill (compact
-     * `$X/$Y` indicator) and the Tip Jar bottom sheet. Sourced from
-     * [com.stash.core.data.tipjar.TipJarRepository] which fetches
-     * the public supporters JSON. Defaults to [com.stash.core.data.tipjar.TipJarState.EMPTY]
-     * before the repo's first emission so the Home pill never crashes
-     * on null.
-     */
-    val tipJar: com.stash.core.data.tipjar.TipJarState =
-        com.stash.core.data.tipjar.TipJarState.EMPTY,
 
     /**
      * v0.9.35: state of the "re-tagging library" banner. Hidden in

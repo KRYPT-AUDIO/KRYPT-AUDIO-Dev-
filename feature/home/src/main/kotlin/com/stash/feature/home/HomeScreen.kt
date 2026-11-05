@@ -1,15 +1,6 @@
 package com.stash.feature.home
 
-import androidx.compose.animation.core.EaseInOut
-import androidx.compose.animation.core.LinearEasing
-import androidx.compose.animation.core.RepeatMode
-import androidx.compose.animation.animateColor
-import androidx.compose.animation.core.animateFloat
-import androidx.compose.animation.core.infiniteRepeatable
-import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.MarqueeSpacing
-import androidx.compose.foundation.basicMarquee
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
@@ -24,14 +15,8 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
-import androidx.compose.ui.text.SpanStyle
-import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.buildAnnotatedString
-import androidx.compose.ui.text.withStyle
-import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import com.stash.core.ui.theme.SpaceGrotesk
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -88,15 +73,6 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.mutableLongStateOf
-import androidx.compose.runtime.withFrameMillis
-import androidx.compose.ui.draw.clipToBounds
-import androidx.compose.ui.graphics.graphicsLayer
-import androidx.compose.ui.layout.onSizeChanged
-import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.foundation.layout.wrapContentWidth
-import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -107,7 +83,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.foundation.layout.aspectRatio
 import com.stash.core.ui.ambient.LocalAlbumChrome
 import com.stash.core.ui.ambient.LocalThemeAccent
@@ -144,7 +119,6 @@ import com.stash.core.ui.components.streaming.StreamingModeChip
 import com.stash.core.ui.components.streaming.StreamingModeSheet
 import androidx.compose.ui.layout.ContentScale
 import coil3.compose.AsyncImage
-import com.stash.core.ui.theme.StashTheme
 import com.stash.core.common.extensions.pluralize
 import com.stash.core.ui.components.bottomChromePadding
 
@@ -158,6 +132,10 @@ import com.stash.core.ui.components.bottomChromePadding
  * the same uiState lists, and capping upstream would truncate the full grid too.
  */
 private const val HOME_RAIL_LIMIT = 12
+private const val KRYPT_AUDIO_DISCORD_URL = "https://discord.gg/UVyw74zJP4"
+private const val STASH_WEBSITE_URL = "https://weblate.paraliyzed.net/projects/stash-music-app/"
+private const val STASH_TRANSLATE_ACCESS_FORM_URL =
+    "https://docs.google.com/forms/d/e/1FAIpQLSexDpqAvK82QlYYpC8J0ukwVXkzOQSjC8V10SPVbj1ug0ojow/viewform"
 
 /**
  * Home screen composable displaying a premium dark dashboard with sync
@@ -255,29 +233,6 @@ fun HomeScreen(
         // Edge to edge under the glass mini player + tab bar: they blur the feed as it scrolls by.
         contentPadding = PaddingValues(bottom = bottomChromePadding(120.dp)),
     ) {
-        // ── Supporter pill (full row) ─────────────────────────────────
-        // v0.9.13: live data from TipJarRepository. Tap → ko-fi.
-        item {
-            val tipJar = uiState.tipJar
-            val pillSupporters = remember(tipJar) {
-                val live = tipJar.supporters.map {
-                    Supporter(name = it.name, amount = "$${it.amountUsd}", message = it.message)
-                }
-                // Legacy donors pre-date the Ko-fi webhook and exist nowhere
-                // in the Worker's KV — they always ride the tape (deduped in
-                // case they ever re-donate through the live pipeline).
-                val liveNames = live.map { it.name.lowercase() }.toSet()
-                live + LEGACY_SUPPORTERS.filter { it.name.lowercase() !in liveNames }
-            }
-            // Edge-to-edge: the ticker runs the full screen width, no card
-            // chrome — maximum runway for the scrolling messages.
-            SupporterTicker(
-                supporters = pillSupporters,
-                // Above the wordmark (owner, 2026-10-22): the title row's own padding spaces it.
-                modifier = Modifier.fillMaxWidth(),
-            )
-        }
-
         // ── App title row: wordmark + social icons ────────────────────
         // v0.9.13: empty space to the right of the wordmark holds quick
         // links to the project (GitHub, X). Supporter pill moves back
@@ -292,18 +247,21 @@ fun HomeScreen(
                 // One ink (owner, 2026-10-11): white on dark / aubergine on light, and while a song
                 // plays the contrast-checked tint of its mood colour, crossfading over 800 ms. Read
                 // at draw time, so the crossfade redraws the wordmark without recomposing the feed.
-                val wordmark = painterResource(id = R.drawable.wordmark_stash)
                 val chrome = LocalAlbumChrome.current
-                Spacer(
+                Text(
+                    text = "KRYPT AUDIO",
                     modifier = Modifier
-                        .height(37.dp)
-                        .aspectRatio(wordmark.intrinsicSize.width / wordmark.intrinsicSize.height)
-                        .semantics { contentDescription = "Stash" }
-                        .drawBehind {
-                            with(wordmark) { draw(size, colorFilter = ColorFilter.tint(chrome.wordmark)) }
-                        },
+                        .weight(1f)
+                        .semantics { contentDescription = "KRYPT AUDIO" },
+                    style = MaterialTheme.typography.titleMedium.copy(
+                        fontWeight = FontWeight.ExtraBold,
+                        letterSpacing = (-0.4).sp,
+                    ),
+                    color = chrome.wordmark,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    softWrap = false,
                 )
-                Spacer(modifier = Modifier.weight(1f))
 
                 // Streaming-mode quick-access chip. Tap → opens the
                 // StreamingModeSheet for the picker. Gated on
@@ -318,14 +276,14 @@ fun HomeScreen(
 
                 val socialUriHandler = LocalUriHandler.current
                 androidx.compose.material3.IconButton(
-                    onClick = { socialUriHandler.openUri(STASH_DISCORD_URL) },
+                    onClick = { socialUriHandler.openUri(KRYPT_AUDIO_DISCORD_URL) },
                     modifier = Modifier.size(40.dp),
                 ) {
                     androidx.compose.material3.Icon(
                         painter = androidx.compose.ui.res.painterResource(
                             id = com.stash.core.ui.R.drawable.ic_brand_discord,
                         ),
-                        contentDescription = "Join the Stash Discord",
+                        contentDescription = "Join the KRYPT AUDIO Discord",
                         tint = androidx.compose.ui.graphics.Color(0xFF5865F2),
                         modifier = Modifier.size(20.dp),
                     )
@@ -1164,176 +1122,6 @@ private fun LosslessOfflineBanner(
     }
 }
 
-// ── Supporter pill ───────────────────────────────────────────────────────
-
-private data class Supporter(
-    val name: String,
-    val amount: String,
-    val message: String,
-)
-
-// v0.9.13: report-an-issue link shown as a wrench icon next to the
-// wordmark on Home. Tap → GitHub new-issue form so users can file
-// bugs without leaving the project. Edit when the repo URL changes.
-
-// v0.9.38+: Discord invite shown as a chat-bubble icon (blurple-tinted)
-// to the left of the wrench. Tap → opens the invite in the default
-// browser. Edit when the invite rotates.
-private const val STASH_DISCORD_URL = "https://discord.gg/vcbjEby5PC"
-
-// Translation project on Weblate. Tap → Weblate project page.
-private const val STASH_WEBSITE_URL = "https://weblate.paraliyzed.net/projects/stash-music-app/"
-
-// Form to request translator access on Weblate.
-private const val STASH_TRANSLATE_ACCESS_FORM_URL =
-    "https://docs.google.com/forms/d/e/1FAIpQLSexDpqAvK82QlYYpC8J0ukwVXkzOQSjC8V10SPVbj1ug0ojow/viewform"
-
-private val LEGACY_SUPPORTERS = listOf(
-    Supporter(
-        name = "Cedric",
-        amount = "$10",
-        message = "Just downloaded Stash to replace Spotify. This is amazing bro. Thanks for your work.",
-    ),
-    Supporter(
-        name = "Slowcab",
-        amount = "$5",
-        message = "Amazing work! Keep sticking it to the man!",
-    ),
-    Supporter(
-        name = "RucaNebas",
-        amount = "$5",
-        message = "Awesome application! I hope continuous improvement and support",
-    ),
-)
-
-/**
- * Tape speed: 31 dp/s at first, 15 % quicker (owner, 2026-10-22), then 10 % quicker again
- * (owner, 2026-11-02: "+10 %" meant speed, not size; about 39.2 dp/s).
- */
-private val TickerSpeedPerSec = 31.dp * 1.15f * 1.1f
-
-/**
- * Tip-jar ticker — dublab-style community marquee.
- *
- * One slim strip, ALL supporters flowing through it as a continuous
- * horizontal scroll (name · amount, then their message, ✦-separated) —
- * grassroots radio-station energy instead of a rotating card. Tap
- * anywhere opens ko-fi; goal/progress tracking lives there.
- */
-@Composable
-private fun SupporterTicker(
-    supporters: List<Supporter>,
-    modifier: Modifier = Modifier,
-) {
-    if (supporters.isEmpty()) return
-    val uriHandler = LocalUriHandler.current
-    val extendedColors = StashTheme.extendedColors
-
-    val ink = MaterialTheme.colorScheme.onSurface
-    val dim = MaterialTheme.colorScheme.onSurfaceVariant
-
-    // Supporters woven with station announcements (mission line, dev and
-    // contributor calls) so the wire carries variety, not just gratitude.
-    // Separator: a dimmed interpunct — no color pop, so the
-    // strip stays quiet inside the app's palette.
-    val line = remember(supporters, ink, dim) {
-        val segments = buildTickerSegments(
-            supporters.map { TickerSegment.Shoutout(it.name, it.amount, it.message) },
-        )
-        buildAnnotatedString {
-            segments.forEach { seg ->
-                when (seg) {
-                    is TickerSegment.Shoutout -> {
-                        withStyle(SpanStyle(color = ink, fontWeight = FontWeight.SemiBold)) {
-                            append("${seg.name} · ${seg.amount}")
-                        }
-                        if (seg.message.isNotBlank()) {
-                            withStyle(SpanStyle(color = dim, fontStyle = FontStyle.Italic)) {
-                                append("  “${seg.message}”")
-                            }
-                        }
-                    }
-                    is TickerSegment.Announcement -> {
-                        // Station voice: quiet by design — muted ink, regular
-                        // weight (names are bold, quotes italic; this murmurs).
-                        withStyle(SpanStyle(color = dim)) {
-                            append(seg.text)
-                        }
-                    }
-                }
-                // Entry separator: the app's own interpunct, dimmed — no
-                // color pop, just a quiet beat of air between voices.
-                withStyle(SpanStyle(color = dim.copy(alpha = 0.5f))) { append("    ·    ") }
-            }
-        }
-    }
-
-    // Wall-clock marquee: offset is a pure function of elapsed-since-epoch
-    // (see marqueeOffsetPx), so the tape RESUMES mid-flow after the item
-    // leaves and re-enters composition. basicMarquee restarted from zero on
-    // every return to the top of Home — which is why announcements deep in
-    // the tape were never seen. rememberSaveable pins the epoch across
-    // lazy-item disposal.
-    val epochMs = rememberSaveable { System.currentTimeMillis() }
-    var nowMs by remember { mutableLongStateOf(System.currentTimeMillis()) }
-    // Runs only while Home is in front: under the open player the tape holds still, and being
-    // wall-clock it picks up mid-flow when the player closes. With motion still (Remove
-    // animations, or Battery Saver) it holds too: the endless tape is a frame every refresh.
-    val tapeActive = com.stash.core.ui.components.rememberPageActive() &&
-        !com.stash.core.ui.ambient.rememberLoopsStill()
-    LaunchedEffect(tapeActive) {
-        if (!tapeActive) return@LaunchedEffect
-        while (true) {
-            withFrameMillis { nowMs = System.currentTimeMillis() }
-        }
-    }
-    val velocityPxPerSec = with(LocalDensity.current) { TickerSpeedPerSec.toPx() }
-    var tapeWidthPx by remember { mutableIntStateOf(0) }
-
-    // Full-bleed strip: no card, no border, no leading icon — every pixel
-    // of width belongs to the tape.
-    Surface(
-        modifier = modifier.clickable { uriHandler.openUri("https://ko-fi.com/rawnald") },
-        // AMOLED: the glass tint would keep the strip's pixels lit — let the
-        // pure-black ground show through instead.
-        color = if (com.stash.core.ui.theme.LocalIsAmoledTheme.current) {
-            Color.Transparent
-        } else {
-            extendedColors.glassBackground
-        },
-    ) {
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 10.dp)
-                .clipToBounds(),
-        ) {
-            Row(
-                modifier = Modifier
-                    .wrapContentWidth(align = Alignment.Start, unbounded = true)
-                    .graphicsLayer {
-                        translationX = -marqueeOffsetPx(nowMs - epochMs, velocityPxPerSec, tapeWidthPx)
-                    },
-            ) {
-                Text(
-                    text = line,
-                    style = MaterialTheme.typography.labelMedium,
-                    maxLines = 1,
-                    softWrap = false,
-                    modifier = Modifier.onSizeChanged { tapeWidthPx = it.width },
-                )
-                // Second copy of the tape for a seamless wrap.
-                Text(
-                    text = line,
-                    style = MaterialTheme.typography.labelMedium,
-                    maxLines = 1,
-                    softWrap = false,
-                )
-            }
-        }
-    }
-}
-
 // \u2500\u2500 Qobuz discovery rows \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 
 /**
@@ -1410,4 +1198,3 @@ internal fun DiscoveryPlaylistRow(
         }
     }
 }
-

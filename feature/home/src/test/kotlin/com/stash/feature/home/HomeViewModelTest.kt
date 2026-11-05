@@ -5,8 +5,6 @@ import com.stash.core.data.db.entity.StashMixRecipeEntity
 import com.stash.core.data.discovery.HomeDiscoveryRepository
 import com.stash.core.data.prefs.StreamingPreference
 import com.stash.core.data.repository.MusicRepository
-import com.stash.core.data.tipjar.TipJarRepository
-import com.stash.core.data.tipjar.TipJarState
 import com.stash.core.media.PlayerRepository
 import com.stash.core.model.MusicSource
 import com.stash.core.model.Playlist
@@ -448,13 +446,6 @@ class HomeViewModelTest {
             onBlocking { current() } doReturn streamingEnabled
         }
         val prefs = losslessPrefs ?: losslessPrefsMock(losslessEnabled, losslessOfflineDismissed)
-        // init {} reads isStale() (suspend, primitive Boolean) — stub it so the
-        // cold-start warm-up coroutine doesn't NPE on an unboxed null. `state`
-        // feeds the uiState combine, so it must emit.
-        val tipJar = mock<TipJarRepository> {
-            on { state } doReturn MutableStateFlow(TipJarState.EMPTY)
-            onBlocking { isStale() } doReturn false
-        }
         val metadataBackfill = mock<MetadataBackfillState> {
             on { snapshot } doReturn flowOf(
                 MetadataBackfillState.BackfillSnapshot(
@@ -483,7 +474,6 @@ class HomeViewModelTest {
             losslessPrefs = prefs,
             settingsDeepLinkController = mock(),
             libraryDeepLinkController = com.stash.core.data.navigation.LibraryDeepLinkController(),
-            tipJarRepository = tipJar,
             recipeDao = recipeDao,
             discoveryQueueDao = discoveryQueueDao,
             playlistDao = playlistDao,

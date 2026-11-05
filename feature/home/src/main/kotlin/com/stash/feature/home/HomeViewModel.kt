@@ -64,8 +64,8 @@ import javax.inject.Inject
  * ViewModel for the redesigned Home screen — a pure *discovery* surface.
  *
  * Home now carries only the **Discover hero** (the materialized builtin Daily
- * Discover playlist) plus the persistent "chrome": tip-jar pill, lossless
- * prompt, metadata-backfill banner, and the streaming toggle. All library
+ * Discover playlist) plus the persistent "chrome": lossless prompt,
+ * metadata-backfill banner, and the streaming toggle. All library
  * content (mixes, liked songs, recently-added, custom playlists) and its
  * flows/methods were relocated to the Library screen (`:feature:library`).
  *
@@ -79,7 +79,6 @@ class HomeViewModel @Inject constructor(
     private val losslessPrefs: LosslessSourcePreferences,
     private val settingsDeepLinkController: com.stash.core.data.navigation.SettingsDeepLinkController,
     private val libraryDeepLinkController: com.stash.core.data.navigation.LibraryDeepLinkController,
-    private val tipJarRepository: com.stash.core.data.tipjar.TipJarRepository,
     private val recipeDao: StashMixRecipeDao,
     private val discoveryQueueDao: DiscoveryQueueDao,
     private val playlistDao: com.stash.core.data.db.dao.PlaylistDao,
@@ -162,30 +161,9 @@ class HomeViewModel @Inject constructor(
     /** One-shot snackbar messages. */
     val userMessages: SharedFlow<String> = _userMessages.asSharedFlow()
 
-    init {
-        // v0.9.13: warm the tip-jar cache on cold-start, then trigger a
-        // network refresh if the cache is stale (>15 min). Failures are
-        // silently absorbed by the repo — the pill always shows
-        // something thanks to the bundled fallback.
-        viewModelScope.launch {
-            tipJarRepository.warmUp()
-            if (tipJarRepository.isStale()) {
-                tipJarRepository.refresh()
-            }
-        }
-    }
-
-    /** v0.9.13: callable from the screen on resume to keep the pill fresh. */
-    fun refreshTipJarIfStale() {
-        viewModelScope.launch {
-            if (tipJarRepository.isStale()) tipJarRepository.refresh()
-        }
-    }
-
     /**
      * Session-scoped "minimize Daily Discover": long-press the hero →
      * "Minimize for now" drops the hero page until the next app launch.
-     * Deliberately not persisted — it's "hide it for a bit", not a setting.
      */
     private val _heroMinimized = MutableStateFlow(false)
     val heroMinimized: StateFlow<Boolean> = _heroMinimized
@@ -539,17 +517,15 @@ class HomeViewModel @Inject constructor(
         // Paired so uiState stays within the 5-flow typed combine overload.
         combine(homePlaylistFlow, likedCardFlow) { home, liked -> home to liked },
         losslessBannersFlow,
-        tipJarRepository.state,
         metadataBackfillBannerFlow,
         discoveryFlow,
-    ) { (home, likedCard), (losslessPrompt, showLosslessOffline), tipJar, metadataBackfillBanner, discovery ->
+    ) { (home, likedCard), (losslessPrompt, showLosslessOffline), metadataBackfillBanner, discovery ->
         HomeUiState(
             hero = home.hero,
             heroBuilding = home.heroBuilding,
             isLoading = false,
             losslessPrompt = losslessPrompt,
             showLosslessOffline = showLosslessOffline,
-            tipJar = tipJar,
             metadataBackfillBanner = metadataBackfillBanner,
             selectedGenre = discovery.selectedGenre,
             qobuzDiscoveryEnabled = discovery.enabled,

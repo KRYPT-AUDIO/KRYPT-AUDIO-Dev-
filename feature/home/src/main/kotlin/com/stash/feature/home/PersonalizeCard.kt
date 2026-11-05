@@ -34,7 +34,7 @@ fun PersonalizeCard(
                 color = MaterialTheme.colorScheme.onSurface,
             )
             Text(
-                text = "Connect a service and run a sync so Stash can tailor daily discovery to your taste.",
+                text = "Connect a service and run a sync so KRYPT AUDIO can tailor daily discovery to your taste.",
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
